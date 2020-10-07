@@ -1,0 +1,137 @@
+.cy_single_footer_widget{
+    @media #{$tab}{
+        margin-bottom: 40px;
+    }
+    .footer_logo + .desc{
+        margin-top: 50px;
+        @media #{$tab}{
+            margin-top: 30px;
+        }
+    }
+    .desc + .social_icon{
+        margin-top: 170px;
+        @media #{$tab}{
+            margin-top: 30px;
+        }
+    }
+    .social_icon{
+        a{
+            color: #c9c9c9;
+            margin-right: 40px;
+            font-size: 18px;
+            display: inline-block;
+            &:last-child{
+                margin-right: 0;
+            }
+        }
+    }
+    .widget_title{
+        font-size: 20px;
+        font-weight: 500;
+        font-family: $dm_sans;
+        margin-bottom: 38px;
+        color: $white;
+        @media #{$mobile}{
+            margin-bottom: 20px;
+            color: $heading_color;
+        }
+        @media #{$tab_device}{
+            margin-bottom: 20px;
+        }
+    }
+    .menu_list{
+        margin: 0;
+        padding: 0;
+        li{
+            list-style: none;
+            a{
+                color: #878c9a;
+                font-size: 16px;
+                display: inline-block;
+                margin: 9px 0;
+                line-height: 27px;
+            }
+        }
+    }
+}
+
+.footer_section{
+    position: relative;
+    z-index: 1;
+    &.sec_padding{
+        padding: 120px 0 48px;
+        @media #{$tab_device}{
+            padding: 80px 0 48px;
+        }
+    }
+}
+.footer_shape{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+    @media #{$mobile}{
+        display: none;
+    }
+}
+.subscribe_from{
+    margin-top: 100px;
+    @media #{$tab_device}{
+        margin-top: 40px;
+    }
+}
+.subscribe_from_content{
+    .title{
+        font-size: 30px;
+        line-height: 40px;
+        color: $white;
+        @media #{$mobile}{
+            color: $heading_color;
+        }
+    }
+    .desc{
+        color: #878c9a;
+    }
+}
+.subscribe_form{
+    position: relative;
+    @media #{$mobile}{
+        margin-top: 40px;
+    }
+   .form-control{
+       border-radius: 0;
+       border: 0px solid transparent;
+       height: 70px;
+       line-height: 70px;
+       padding: 10px 30px;
+   } 
+   button{
+       border: 0px solid transparent;
+       background-color: transparent;
+       position: absolute;
+       right: 35px;
+       top: 50%;
+       transform: translateY(-50%);
+       padding: 0;
+       margin: 0;
+       z-index: 7;
+   }
+}
+.copyright_text{
+    margin: 0 auto;
+    margin-top: 80px;
+    color: #757a89;
+}
+.cy_footer_widget_list{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    @media #{$mobile}{
+        display: block;
+    }
+}
+@media #{$tab}{
+    .offwhite_bg_mobile{
+        background-color: #fffcf3;
+    }
+}

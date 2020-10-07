@@ -1,0 +1,162 @@
+/*----------------------------------------------------
+@File: Default Styles
+@Author: 
+@URL: 
+Author E-mail: 
+
+This file contains the styling for the actual template, this
+is the file you need to edit to change the look of the
+template.
+---------------------------------------------------- */
+/*=====================================================================
+@Template Name: 
+@Author:  
+@Developed By: 
+@Developer URL: 
+Author E-mail: 
+
+@Default Styles
+
+Table of Content:
+01/ Variables
+02/ mixins
+03/ reset
+04/ button
+05/ header
+06/ banner part
+07/ about
+08/ portfolio section
+09/ cta section
+10/ experiance list section 
+11/ client list section
+12/ contact section
+13/ icon box
+14/ featured list
+15/ accordion
+16/ team member
+17/ channels intro
+18/ team details
+19/ creative team
+20/ single blog
+21/ map section
+22/ img box
+23/ product wrapper
+24/ portfolio masonry
+25/ client feedback
+26/ subscribetion
+27/ single box
+28/ press agencies slider
+29/ intro section
+30/ tourist place
+31/ feature place
+32/ booking form
+33/ product section
+34/ cosmetics portfolio
+35/ emarketing strategies
+36/ pricing plan
+37/ testimonial
+38/ feature flip
+39/ tab content
+40/ about branding slider
+41/ services sectio
+42/ faq
+43/ blog masonry
+44/ scorll
+45/ breadcrumb
+46/ error page
+47/ element
+48/ portfolio details
+49/ sidebar
+50/ blog details
+51/ cart
+52/ checkout
+53/ product details
+54/ theme setting
+55/ footer
+=====================================================================*/ 
+
+//variables css
+@import "variables";
+
+//mixins css
+@import "mixins";
+
+//reset css
+@import "reset";
+
+//button css
+@import "button";
+
+//scorll style css
+@import "theme_setting";
+
+//scorll style css
+@import "scorll";
+
+//header part style css
+@import "header";
+
+//banner part css
+@import "banner_part";
+
+//feature part css
+@import "feature";
+
+//product list tab css
+@import "product_list";
+
+//product css
+@import "product";
+
+//testimonial css
+@import "testimonial";
+
+//feature product css
+@import "feature_product";
+
+//instagram widget css
+@import "instagram_widget";
+
+//animated heading css
+@import "animated_heading";
+
+//line shape css
+@import "line_shape";
+
+//about part css
+@import "about_part";
+
+//breadcrumb part css
+@import "breadcrumb_part";
+
+//subscribe part css
+@import "subscribe_section";
+
+//store product dtails part css
+@import "store_product_dtails";
+
+//contact page part css
+@import "contact_page";
+
+//map part css
+@import "map";
+
+//counter section css
+@import "counter_section";
+
+//testimonial thumb slider css
+@import "testimonial_thumb_slider";
+
+//icon box css
+@import "icon_box";
+
+//grid wrapper css
+@import "cy_grid_wrapper";
+
+//bike list tab css
+@import "bike_list_tab";
+
+//footer widget css
+@import "footer_widget";
+
+

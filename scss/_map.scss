@@ -1,0 +1,50 @@
+#map {
+    height: 667px;
+    width: 100%;
+  }
+  
+  .single_location {
+    position: relative;
+    background-color: #fff;
+  }
+  
+  .single_location span {
+    position: absolute;
+    left: 0;
+    font-size: 24px;
+    background: -webkit-linear-gradient(235.46deg, #44DA64 8.9%, #1BB2E8 108.03%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  
+  .gm-style-iw.gm-style-iw-c {
+    min-width: 300px !important;
+    overflow: hidden;
+    padding: 20px;
+  }
+  
+  .single_location h2 {
+    margin: 0 0 10px;
+    font-size: 16px;
+    text-transform: capitalize;
+    font-weight: 500;
+    color: #2B3332;
+  }
+  
+  .single_location p {
+    margin: 8px 0 0;
+    font-size: 14px;
+    color: #7C8887;
+    line-height: 1.3;
+  }
+  
+  .gm-style .gm-style-iw-c {
+    border-radius: 0;
+    box-shadow: 0 2px 7px 1px rgba(0, 0, 0, 0.2);
+  }
+  
+  .gm-ui-hover-effect {
+    font-size: 20px;
+    top: 0 !important;
+    right: 0 !important;
+  }

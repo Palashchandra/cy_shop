@@ -1,0 +1,59 @@
+.cy_about_content{
+    .sub_title{
+        font-size: 16px;
+        font-family: $dm_sans;
+        color: #878c9a;
+        font-weight: 400;
+        margin-bottom: 20px;
+    }
+    .title{
+        font-size: 70px;
+        line-height: 75px;
+        margin-bottom: 0;
+    }
+}
+
+//about page wrapper css
+.cy_about_section_wrapper{
+    .about_section_inner{
+        .sub_title{
+            font-size: 14px;
+            font-family: $dm_sans;
+            color: #878c9a;
+            text-transform: uppercase;
+        }
+        .title{
+            font-size: 55px;
+            line-height: 70px;
+            margin-bottom: 72px;
+        }
+    }
+    .about_section_thumb{
+        margin-bottom: 100px;
+    }
+    .about_section_desc{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        .desc{
+            flex: 40% 0 0;
+        }
+    }
+}
+
+.cy_bike_description_wrapper{
+    .sub_title{
+        font-size: 14px;
+        font-family: $dm_sans;
+        color: #878c9a;
+        text-transform: uppercase;
+    }
+    .title{
+        font-size: 45px;
+        line-height: 50px;
+        margin-bottom: 72px;
+    }
+    .desc{
+        margin-bottom: 30px;
+    }
+}

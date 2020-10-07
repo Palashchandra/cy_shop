@@ -1,0 +1,40 @@
+.cy_subscribe_part_wrapper{
+    text-align: center;
+    title{
+        font-size: 45px;
+        margin-bottom: 20px;
+        @media #{$tab}{
+            font-size: 30px;
+            margin-bottom: 10px;
+        }
+    }
+    .description{
+        font-size: 17px;
+    }
+    .subscribe_form_inner{
+        margin-top: 60px;
+        display: flex;
+        @media #{$tab}{
+            margin-top: 30px;
+        }
+        @media #{$xs_mobile}{
+            flex-wrap: wrap;
+        }
+        .cy_input{
+            border: 2px solid #f2f2f2;
+            padding: 10px 30px;
+            height: 60px;
+            line-height: 60px;
+            background-color: #f2f2f2;
+            width: 100%;
+        }
+        .btn_4{
+            font-family: $dm_sans;
+            @media #{$xs_mobile}{
+                display: block;
+                width: 100%;
+                text-align: center;
+            }
+        }
+    }
+}

@@ -1,0 +1,61 @@
+.cy_bike_list_tab_inner{
+    background-color: #fff;
+    margin-bottom: 30px;
+    .card-header{
+        background-color: #fff;
+        border-bottom: 0px solid transparent;
+        padding: 25px 80px 25px 120px;
+        .btn{
+            font-size: 45px;
+            padding: 0;
+            text-align: left;
+            position: relative;
+            z-index: 1;
+            display: block;
+            width: 100%;
+            &:focus{
+                border: 0px solid transparent;
+            }
+            &:after{
+                position: absolute;
+                content: "\e622";
+                right: 0;
+                top: 30%;
+                transform: translateY(-50%);
+                width: 40px;
+                height: 40px;
+                color: #26253b;
+                font-family: 'themify';
+            }
+            &.collapsed{
+                &:after{
+                    content: "\e61a";
+                }
+            }
+        }
+    }
+    .card-body{
+        padding: 0 55px 55px;
+    }
+    .bike_list_tab_inner{
+        display: flex;
+        align-items: center;
+        margin-bottom: 23px;
+        &:last-child{
+            margin-bottom: 0;
+        }
+        .title{
+            flex: 30% 0 0;
+            text-align: right;
+            margin-bottom: 0;
+            font-size: 35px;
+            color: #1f1e35;
+        }
+        .desc{
+            padding-left: 80px;
+            color: #878c9a;
+            font-size: 35px;
+            font-family: $bebas_font;
+        }
+    }
+}

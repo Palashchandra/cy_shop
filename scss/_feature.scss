@@ -1,0 +1,144 @@
+//video section css here
+.video_section {
+    overflow: hidden;
+    &.video_sec_padding {
+        padding: 163px 0 130px;
+        @media #{$tab}{
+            padding: 100px 0;
+        }
+    }
+
+    .video_section_content {
+        position: relative;
+        z-index: 1;
+        .video_popup {
+            height: 80px;
+            width: 80px;
+            box-shadow: 10px 17.321px 40px 0px rgba(1, 16, 58, 0.14);
+            img{
+                max-width: 14px;
+                margin-left: 3px;
+            }
+            @media #{$tab}{
+                height: 60px;
+                width: 60px;
+            }
+        }
+    }
+
+    .about_img_shape {
+        position: absolute;
+        top: -70px;
+        left: -40px;
+        z-index: -1;
+    }
+
+    .round_shape_animation {
+        border-radius: 50%;
+        background: #acf2f0;
+        position: absolute;
+        right: -130px;
+        bottom: -65px;
+        width: 280px;
+        height: 280px;
+        -webkit-animation: circleAnimation 5s linear infinite;
+        animation: circleAnimation 5s linear infinite;
+        z-index: -1;
+        @media #{$tab}{
+            width: 150px;
+            height: 150px;
+            right: -70px;
+        }
+    }
+}
+
+.video_popup_section {
+    @media #{$mobile}{
+        margin-bottom: 40px;
+    }
+    .video_popup {
+        position: absolute;
+        left: 0;
+        right: 0;
+        margin: 0 auto;
+        top: 50%;
+        transform: translateY(-50%);
+        img{
+            border-radius: 0;
+            position: absolute;
+            left: 0;
+            right: 0;
+            margin: 0 auto;
+            text-align: center;
+            top: 34%;
+            padding-left: 4px;
+        }
+        i {
+            font-size: 18px;
+            color: $base_color;
+        }
+    }
+    &.style_2{
+        .video_popup {
+            background-color: #1e1e30;
+            width: 160px;
+            height: 160px;
+            &:hover{
+                background-color: #ffde28;
+            }
+            img{
+                top: 50%;
+                transform: translateY(-50%);
+            }
+        }
+    }
+}
+
+//featured part content css
+.featured_part_content{
+    @media (min-width: 1450px){
+        padding: 0 40px;
+    }
+    .featured_title{
+        font-size: 50px;
+        font-weight: 600;
+        line-height: 55px;
+        @media #{$tab}{
+            font-size: 35px;
+            line-height: 45px;
+        }
+    }
+    .featured_title + .desc{
+        margin-top: 30px;
+        @media #{$tab}{
+            margin-top: 20px;
+        }
+    }
+    .desc + .cu_btn{
+        margin-top: 55px;
+        @media #{$tab}{
+            margin-top: 25px;
+        }
+    }
+    .featured_title + .cu_btn{
+        margin-top: 45px;
+        @media #{$tab}{
+            margin-top: 25px;
+        }
+    }
+}
+.video_popup_section{
+    img{
+        border-radius: 0 0 200px 0;
+    }
+}
+
+.bike_featured_thumb{
+    @media #{$mobile}{
+        margin-top: 40px;
+    }
+    img{
+        border-radius: 248px 0 0 0;
+    }
+}
+

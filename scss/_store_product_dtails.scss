@@ -1,0 +1,61 @@
+.cu_store_product_wrapper{
+    position: relative;
+    .cu_store_product_inner_content{
+        position: absolute;
+        right: 0;
+        top: 0;
+        width: 56%;
+        padding: 212px 75px;
+        background-color: #fff;
+        @media #{$tab}{
+            position: relative;
+            width: 100%;
+            padding: 60px 30px 90px;
+        }
+        @media #{$medium_device}{
+            padding: 129px 75px;
+        }
+    }
+    .video_popup{
+        position: absolute;
+        left: -35px;
+        bottom: -35px;
+        background-color: #3b3844;
+        @media #{$tab}{
+            position: relative;
+            margin-top: 30px;
+            left: 0;
+            right: 0;
+            margin: 0 auto;
+        }
+        @media #{$big_device}{
+            height: 130px;
+            width: 130px;
+            &.play_animation:before {
+                height: 130px;
+                width: 130px;
+            }
+        }
+        &.play_animation:before {
+            background: rgba($color: #f2c268, $alpha: .45);
+        }
+    }
+    .sub_title {
+        font-size: 16px;
+        font-family: $dm_sans;
+        color: rgb(31, 30, 53);
+        text-transform: uppercase;
+        line-height: 1.625;
+        margin-bottom: 28px;
+    }
+    .title{
+        font-size: 35px;
+        font-family: $dm_sans;
+        color: rgb(38, 37, 59);
+        line-height: 1.429;
+        font-weight: 500;
+        @media #{$tab}{
+            font-size: 25px;
+        }
+    }
+}

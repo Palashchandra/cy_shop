@@ -1,0 +1,41 @@
+.ai-icon svg {
+	max-width: 65px;
+	max-height: 65px;
+	height: 100%;
+}
+
+.ai-icon svg polyline,
+.ai-icon svg polygon,
+.ai-icon svg rect,
+.ai-icon svg circle,
+.ai-icon svg line,
+.ai-icon svg ellipse,
+.ai-icon svg path {
+    stroke-linecap:"square";
+    stroke-linejoin:"miter";
+    stroke-width: 2;
+    stroke-miterlimit: 2;
+    stroke: #111;
+    fill: none;
+}
+
+.ai-header .items span.variation:after {
+	height: 6px;
+	width: 6px;
+	border-radius: 50%;
+	content: '';
+	display: block;
+	position: absolute;
+	right: -15px;
+	background-color: rgba(255,255,255,.3);
+	top: 0;
+}
+
+.ai-icons.out {
+	z-index: 10;
+}
+
+.ai-icons .ai-icon:last-child {
+	border-bottom: none;
+	border-right: none;
+}
