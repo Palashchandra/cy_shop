@@ -1,0 +1,72 @@
+.error_page_wrapper{
+    &.error_page_style_01{
+       padding: 190px 0 100px;
+        text-align: center;
+        .title{
+            font-size: 256px;
+            font-weight: 700;
+            line-height: 1;
+            margin-bottom: 17px;
+            span{
+                color: #ed1c16;
+            }
+        }
+        .content{
+            font-size: 45px;
+            font-weight: 700;
+            color: $heading_color;
+            font-family: $bebas_font; 
+        }
+        .cu_btn{
+            margin-top: 124px;
+            font-family: $dm_sans;
+        } 
+    }
+    &.error_page_style_02{
+        text-align: right;
+        position: relative;
+        .error_page_thumb + .error_pagr_inner{
+            position: absolute;
+            width: 59%;
+            left: 0;
+            top: 0;
+            .cu_btn {
+                position: absolute;
+                right: 0;
+                bottom: 0;
+                color: #26253b;
+                font-size: 14px;
+                padding: 29px 35px;
+                margin-top: 20px;
+                &:hover{
+                    border: 2px solid $base_color;
+                    color: $white;
+                }
+            }
+        }
+        .error_pagr_inner{
+            padding: 120px 20px 140px;
+            text-align: center;
+            background-color: #26253b;
+        }
+        .error_icon{
+            margin-bottom: -65px;
+        }
+        .title{
+            font-size: 256px;
+            font-weight: 700;
+            line-height: 1;
+            margin-bottom: 17px;
+            color: $white;
+            span{
+                color: #ffde28;
+            }
+        }
+        .content{
+            font-size: 45px;
+            font-weight: 700;
+            color: #878c9a;
+            font-family: $bebas_font; 
+        }
+    }
+}

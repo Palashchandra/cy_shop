@@ -1,0 +1,172 @@
+.comming_soon_page_wrapper{
+    .dl_colum_4 {
+        -webkit-column-count: 4;
+        -moz-column-count: 4;
+        column-count: 4;
+        -webkit-column-gap: 30px;
+        -moz-column-gap: 30px;
+        column-gap: 30px;
+        orphans: 1;
+        widows: 1;
+        @media #{$xs_mobile}{
+            -webkit-column-count: 1;
+            -moz-column-count: 1;
+            column-count: 1;
+        }
+        @media #{$large_mobile}{
+            -webkit-column-count: 2;
+            -moz-column-count: 2;
+            column-count: 2;
+        }
+        @media #{$tab_device}{
+            -webkit-column-count: 2;
+            -moz-column-count: 2;
+            column-count: 2;
+        }
+    }
+    .dl_countdown_wrapper {
+        position: relative;
+        .dl_countdown_inner {
+            padding-right: 40px;
+            margin-top: 30px;
+            width: 100%;
+            display: inline-block;
+            border-radius: 10px;
+            @include transform_time(.3s);
+            position: relative;
+            z-index: 1;
+            &:after{
+                position: absolute;
+                content: ":";
+                right: -4%;
+                top: -28%;
+                font-size: 43px;
+                color: #ffde28;
+            }
+            &:last-child{
+                &:after{
+                    display: none;
+                }
+            }
+            span {
+                font-size: 50px;
+                font-weight: 700;
+                color: #fff;
+                line-height: 1;
+                margin-bottom: 10px;
+                display: inline-block;
+                @include transform_time(.3s);
+            }
+
+            .dl_desc {
+                font-weight: 400;
+                font-size: 30px;
+                line-height: 15px;
+                text-transform: uppercase;
+                color: #878c9a;
+                font-family: $bebas_font;
+            }
+        }
+        .dl_countdown_shape{
+            position: absolute;
+            bottom: 0;
+            right: -87%;
+        }
+    }
+    &.comming_soon_style_01{
+        text-align: right;
+        position: relative;
+        background-color: #ffeff3;
+        display: inline-block;
+        border-radius: 258px 0 0 0;
+        .comming_soon_page_inner{
+            width: 40%;
+            float: right;
+        }
+        .comming_soon_page_thumb_02{
+            position: absolute;
+            left: 0;
+            top: 0;
+        }
+        .comming_soon_page_thumb_03{
+            position: absolute;
+            bottom: 0%;
+            left: 20%;
+        }
+        .sub_title{
+            font-size: 35px;
+            color: #1f1e35;
+            text-transform: uppercase;
+            letter-spacing: 12px;
+            margin-bottom: 0;
+            line-height: 28px;
+        }
+        .title{
+            font-size: 70px;
+            color:#ed1c16;
+            text-transform: uppercase;
+        }
+        .subscribe_form{
+            margin-top: 65px;
+        }
+        .comming_soon_page_inner{
+            padding: 189px 20px;
+            text-align: left;
+        }
+        .dl_countdown_inner span {
+            color: #1f1e35;
+        }
+        .dl_countdown_inner .dl_desc {
+            color: #878c9a;
+        }
+        button{
+            font-size: 14px;
+            color: $white;
+            background-color: #272727;
+            padding: 12px 40px;
+            border: 1px solid #272727;
+            border-radius: 0;
+            right: 10px;
+        }
+    }
+    &.comming_soon_style_02{
+        text-align: right;
+        position: relative;
+        .comming_soon_page_thumb + .comming_soon_page_inner{
+            position: absolute;
+            width: 50%;
+            left: 0;
+            top: 0;
+        }
+        .sub_title{
+            font-size: 35px;
+            color: white;
+            text-transform: uppercase;
+            letter-spacing: 12px;
+            margin-bottom: 0;
+            line-height: 28px;
+        }
+        .title{
+            font-size: 70px;
+            color: rgb(255, 222, 40);
+            text-transform: uppercase;
+        }
+        .subscribe_form{
+            margin-top: 65px;
+        }
+        .comming_soon_page_inner{
+            padding: 110px 130px;
+            background-color: #26253b;
+            text-align: left;
+        }
+        button{
+            font-size: 14px;
+            color: $white;
+            background-color: #272727;
+            padding: 12px 40px;
+            border: 1px solid #272727;
+            border-radius: 0;
+            right: 10px;
+        }
+    }
+}

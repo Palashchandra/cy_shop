@@ -504,7 +504,115 @@
     .about_breadcrumb_shape{
         position: absolute;
         right: 0;
-        top: 0;
+        top: -70px;
         z-index: 1;
+    }
+}
+
+
+//blog page breadcrumb css
+.blog_breadcrumb_part{
+    &.sec_padding{
+        padding: 110px 0 222px;
+    }
+}
+
+.cy_blog_breadcrumb_wrapper{
+    &.blog_breadcrumb_style_01{
+        position: relative;
+        .bredcrumb_thumb{
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+        .cy_blog_breadcrumb_inner{
+            padding-left: 40px;
+            margin-top: 50px;
+        }
+        .title{
+            a{
+                color: $heading_color;
+            }
+        }
+        .desc{
+            color: #878c9a;
+            font-size: 17px;
+            line-height: 30px;
+            margin-top: 20px;
+        }
+        .cu_btn{
+            margin-top: 59px;
+        }
+    }
+    &.blog_breadcrumb_style_02{
+        position: relative;
+        .cy_blog_breadcrumb_inner{
+            position: absolute;
+            top: 0;
+            left: 0;
+            max-width: 50%;
+            background-color: $base_color_5;
+            padding: 150px 120px ;
+            z-index: 2;
+        }
+        .cy_post_meta{
+            font-size: 16px;
+            font-weight: 400;
+            color: #1f1e35;
+            margin-bottom: 20px;
+            .post_date{
+                font-weight: 500;
+            }
+        }
+        .title{
+            font-size: 45px;
+            a{
+                color: $heading_color;
+            }
+        }
+        .desc{
+            color: #26253b; 
+            font-size: 17px;
+            line-height: 30px;
+            margin-top: 20px;
+        }
+        .cu_btn{
+            margin-top: 56px;
+            font-family: $dm_sans;
+        }
+        .swiper_navigation{
+            position: absolute;
+            left: 25%;
+            bottom: 45px;
+            display: flex;
+            align-items: center;
+            z-index: 8;
+            .swiper_button_prev, .swiper_button_next{
+                margin: 0 15px;
+                cursor: pointer;
+                i{
+                    font-size: 40px;
+                    color: #e5e2da;
+                    @include transform_time(.3s);
+                    &:hover{
+                        color: #040300;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.cy_post_meta{
+    display: flex;
+    align-items: center;
+    margin-bottom: 22px;
+    p,a{
+        font-size: 16px;
+        color: #1f1e35;
+    }
+    span{
+        color: #1f1e35;
+        margin: 0 5px;
     }
 }

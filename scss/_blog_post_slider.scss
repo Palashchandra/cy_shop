@@ -1,0 +1,35 @@
+.cy_blog_post_slider{
+    background-color: #fff;
+    padding: 45px;
+    position: absolute;
+    bottom: -83%;
+    right: 0;
+    width: 49%;
+}
+.cy_blog_post_slider_inner{
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px;
+    &:last-child{
+        margin-bottom: 0;
+    }
+    .post_content{
+        padding: 0 30px;
+        .post_author{
+            font-size: 14px;
+            color: #878c9a;
+            margin-bottom: 10px;
+            a{
+                color: #878c9a;
+            }
+        }
+        .title{
+            font-size: 30px;
+            line-height: 40px;
+            margin-bottom: 0;
+            a{
+                color: #1f1e35;
+            }
+        }
+    }
+}

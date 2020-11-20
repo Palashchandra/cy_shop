@@ -491,6 +491,35 @@
             }
         })
     }
+    //banner slider
+    var cy_blog_post_slider_active = document.getElementsByClassName("cy_blog_post_slider_active");
+    if (cy_blog_post_slider_active.length) {
+        var mySwiper = new Swiper('.cy_blog_post_slider_active ', {
+            slidesPerView: 1,
+            loop: true,
+            spaceBetween: 100,
+            autoplay: {
+                delay: 500000000,
+            }
+        })
+    }
+
+    //banner slider
+    var cy_blog_breadcrumb_wrapper_slider = document.getElementsByClassName("cy_blog_breadcrumb_wrapper_slider");
+    if (cy_blog_breadcrumb_wrapper_slider.length) {
+        var mySwiper = new Swiper('.cy_blog_breadcrumb_wrapper_slider ', {
+            slidesPerView: 1,
+            loop: true,
+            spaceBetween: 100,
+            autoplay: {
+                delay: 500000000,
+            },
+            navigation: {
+                nextEl: '.swiper_button_next',
+                prevEl: '.swiper_button_prev',
+            },
+        })
+    }
 
     //thumbnail slider
     var dl_thumbnail_testimonial_slider = document.getElementsByClassName("dl_thumbnail_testimonial_slider ");
@@ -536,6 +565,44 @@
             },
         });
     }
+
+    //data bg img
+    $("[data-bg-img]").each(function () {
+        var bg = $(this).data("bg-img");
+        $(this).css({
+            "background": "no-repeat center/cover url(" + bg + ")",
+        })
+    })
+
+    $("[data-bg-color]").each(function () {
+        var bg_color = $(this).data("bg-color");
+        $(this).css({
+            "background-color": (bg_color)
+        })
+    })
+
+    //product count 
+    var incrementPlus;
+    var incrementMinus;
+    var buttonPlus = $(".cart-qty-plus");
+    var buttonMinus = $(".cart-qty-minus");
+
+    var incrementPlus = buttonPlus.click(function() {
+        var $n = $(this)
+            .parent(".product_count")
+            .find(".qty");
+        $n.val(Number($n.val()) + 1);
+    });
+
+    var incrementMinus = buttonMinus.click(function() {
+        var $n = $(this)
+            .parent(".product_count")
+            .find(".qty");
+        var amount = Number($n.val());
+        if (amount > 0) {
+            $n.val(amount - 1);
+        }
+    });
     
 
 

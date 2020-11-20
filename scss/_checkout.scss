@@ -1,0 +1,190 @@
+/** checkout scss **/
+.checkout_section_wrapper{
+    position: relative;
+    z-index: 1;
+    background-color: $white;
+    padding: 70px 48px;
+    .title{
+        font-size: 35px;
+        text-transform: uppercase;
+        margin-bottom: 27px;
+    }
+}
+.checkout_box_wrapper{
+    margin-top: 80px;
+}
+.progress_step_wrapper{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    z-index: 1;
+    &:after{
+        position: absolute;
+        content: "";
+        left: 0;
+        top: 50%;
+        transform: translateY(-50%);
+        height: 3px;
+        width: 100%;
+        background-color: #c9c9c9;
+        z-index: -1;
+    }
+    .single_progress_step{
+        width: 54px;
+        height: 54px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #ececec;
+        border: 2px dashed #c9c9c9;
+        border-radius: 50%;
+        color: #878c9a;
+        font-size: 20px;
+        font-family: $bebas_font;
+    }
+}
+.delivery_address{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex: 31% 0 0;
+    text-align: center;
+    border: 2px solid #e8e8e8;
+    background-color: #f6f6f6;
+    padding: 45px 30px 65px;
+    height: 100%;
+    h4{
+        margin-bottom: 20px;
+    }
+    a{
+        height: 60px;
+        width: 60px;
+        border-radius: 50%;
+        background-color: #eaeaea;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 14px;
+        font-size: 30px;
+        color: #9999a5;
+    }
+    &.border_botted{
+        border: 2px dashed #e8e8e8;
+    }
+}
+
+.checkout_page_product_list{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 30px;
+    .product_img{
+        display: flex;
+        align-items: center;
+        .product_info{
+            padding-left: 35px;
+            .product_name{
+                font-size: 25px;
+                margin-bottom: 12px;
+            }
+            .price{
+                margin-bottom: 14px;
+            }
+            span{
+                color: #878c9a;
+                font-size: 18px;
+            }
+        }
+    }
+    .product_count {
+        position: relative;
+        display: flex;
+        align-items: center;
+        input{
+            border: 0px solid transparent;
+            width: 40px;
+            text-align: center;
+        }
+        ::placeholder{
+            color: #7d7d7d;
+        }
+    }
+    .product_color{
+        text-align: center;
+        span{
+            width: 14px;
+            height: 14px;
+            background-color: #26253b;
+            display: inline-block;
+        }
+        p{
+            text-transform: capitalize;
+            line-height: 1;
+        }
+    }
+    .product_dismis{
+        cursor: pointer;
+        i{
+            width: 26px;
+            height: 26px;
+            background-color: #d5d5d5;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 8px;
+        }
+    }
+}
+
+//order details css
+.order_details{
+    padding: 43px 40px 80px;
+    background-color: #fff;
+    .title{
+        font-size: 35px;
+        text-transform: uppercase;
+    }
+    .order_details_wrapper{
+        margin: 156px 0 177px;
+        h5{
+            display: block;
+            color: #878c9a;
+            font-size: 25px;
+            margin: 28px 0;
+            span{
+                float: right;
+                color: #1f1e35;
+            }
+        }
+    }
+    .total_price{
+        color: #1f1e35;
+        font-size: 25px;
+        padding: 28px 0 0;
+        border-top: 1px solid #9999a5;
+        margin-bottom: 0;
+    }
+}
+.checkout_process_btn{
+    background-color: #ed1c16;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 14px;
+    font-family: "DM Sans", sans-serif;
+    padding: 57px 20px;
+    display: block;
+    text-align: center;
+    i{
+        margin-left: 10px;
+    }
+    &:hover{
+        background-color: $base_color_2;
+        color: $white;
+    }
+}
+
+
+
+/** checkout scss end **/
