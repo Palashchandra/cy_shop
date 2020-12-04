@@ -641,9 +641,24 @@ button:focus,
         display: block;
         width: 95px;
         height: 95px;
-        background: rgba($color: #fff, $alpha: .5);
+        background: rgba($color: #fff, $alpha: .3);
         border-radius: 50%;
         animation: pulse-border 1500ms ease-out infinite;
+        z-index: 1;
+    }
+    &.play_animation:after {
+        content: "";
+        position: absolute;
+        z-index: 0;
+        left: 50%;
+        top: 50%;
+        transform: translateX(-30%) translateY(-30%);
+        display: block;
+        width: 95px;
+        height: 95px;
+        background: rgba($color: #fff, $alpha: .5);
+        border-radius: 50%;
+        animation: pulse-border 1200ms ease-out infinite;
         z-index: 1;
     }
 
@@ -837,7 +852,6 @@ button:focus,
     display: inline-block;
     overflow: hidden;
 }
-
 
 /**************** common css end ****************/
 

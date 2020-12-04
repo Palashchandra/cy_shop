@@ -252,14 +252,11 @@
     top: 50%;
     transform: translateY(-50%);
     z-index: 9;
-    @media #{$mobile}{
+    @media #{$tab}{
         display: none;
     }
-    @media #{$tab_device}{
-        top: auto;
-        transform: translateY(0);
-        bottom: 10px;
-        left: 0;
+    @media #{$medium_device}{
+        display: none;
     }
     @media #{$medium_device}{
         top: auto;
@@ -328,7 +325,7 @@
         display: flex;
         align-items: center;
         @media #{$mobile}{
-            margin-top: 150px;
+            margin-top: 247px;
             align-items: flex-start;
         }
         @media #{$tab_device}{
@@ -447,6 +444,18 @@
             }
         }
     }
+    .cu_btn{
+        position: absolute;
+        left: 0;
+        right: 0;
+        max-width: 200px;
+        text-align: center;
+        margin: 0 auto;
+        bottom: 0;
+        @media #{$mobile}{
+            bottom: -100px;
+        }
+    }
     .swiper-slide-active {
         .banner_title{
             span{
@@ -482,5 +491,9 @@
         background-color: #ffde28;
     }
 }
-
+@media #{$tab}{
+    .icon_box_section.section_padding.mt_100{
+        margin-top: 0;
+    }
+}
 

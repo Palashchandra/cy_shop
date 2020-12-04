@@ -172,6 +172,7 @@
             max-width: 50%;
             @media #{$tab}{
                 padding: 30px;
+                max-width: 100%;
             }
             @media #{$medium_device}{
                 padding: 30px;
@@ -429,10 +430,10 @@
     }
     &.style_02{
         @media #{$mobile}{
-            min-height: 500px;
+            min-height: 100%;
         }
         @media #{$tab_device}{
-            min-height: 600px;
+            min-height: 100%;
         }
         position: relative;
         .cy_contact_breadcrumb_inner{
@@ -443,16 +444,18 @@
             background-color: $white;
             padding: 43px 100px 86px;
             @media #{$mobile}{
-                max-width: 90%;
+                max-width: 100%;
                 padding: 20px;
                 bottom: 0px;
                 background-color: #f7b500;
+                position: relative;
             }
             @media #{$tab_device}{
                 max-width: 100%;
                 padding: 20px;
                 bottom: 0px;
                 background-color: #f7b500;
+                position: relative;
                 .cy_contact_breadcrumb_icon{
                     margin-bottom: 20px;
                 }
@@ -471,7 +474,12 @@
     }
     &.style_03{
         @media #{$mobile}{
-            min-height: 500px;
+            min-height: 400px;
+            img{
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
         }
         @media #{$tab_device}{
             min-height: 600px;
@@ -485,18 +493,32 @@
     background-color: #ffdcc7;
     position: relative;
     z-index: 2;
+    @media #{$mobile}{
+        padding: 62px 20px 60px 20px;
+    }
+    @media #{$tab_device}{
+        padding: 62px 20px 60px 20px;
+    }
+    
     .sub_title{
         font-size: 14px;
         font-family: $dm_sans;
         color: rgb(135, 140, 154);
         text-transform: uppercase;
         margin-bottom: 15px;
+        
     }
     .title{
         font-size: 65px;
         color: rgb(31, 30, 53);
         text-transform: uppercase;
         line-height: 1.077;
+        @media #{$tab}{
+            font-size: 35px;
+        }
+        @media #{$medium_device}{
+            font-size: 40px;
+        }
     }
 }
 .about_section_breadcrumb{
@@ -504,8 +526,14 @@
     .about_breadcrumb_shape{
         position: absolute;
         right: 0;
-        top: -70px;
+        top: 0;
         z-index: 1;
+        @media #{$tab}{
+            display: none;
+        }
+        @media #{$medium_device}{
+            max-width: 67%;
+        }
     }
 }
 
@@ -514,6 +542,12 @@
 .blog_breadcrumb_part{
     &.sec_padding{
         padding: 110px 0 222px;
+        @media #{$tab}{
+            padding: 70px 0;
+        }
+        @media #{$medium_device}{
+            padding: 80px 0;
+        }
     }
 }
 
@@ -524,10 +558,22 @@
             position: absolute;
             top: 0;
             left: 0;
+            @media #{$tab}{
+                position: relative;
+            }
+            @media #{$medium_device}{
+                position: relative;
+            }
         }
         .cy_blog_breadcrumb_inner{
             padding-left: 40px;
             margin-top: 50px;
+            @media #{$tab}{
+                padding-left: 0;
+            }
+            @media #{$medium_device}{
+                padding-left: 0;
+            }
         }
         .title{
             a{
@@ -542,6 +588,17 @@
         }
         .cu_btn{
             margin-top: 59px;
+            @media #{$tab}{
+                margin-top: 30px;
+            }
+            @media #{$medium_device}{
+                margin-top: 30px;
+            }
+        }
+    }
+    .cy_blog_breadcrumb_thumb{
+        @media #{$medium_device}{
+            display: none;
         }
     }
     &.blog_breadcrumb_style_02{
@@ -554,6 +611,26 @@
             background-color: $base_color_5;
             padding: 150px 120px ;
             z-index: 2;
+            @media #{$tab}{
+                max-width: 100%;
+                background-color: #ffde28;
+                padding: 80px 40px;
+                z-index: 2;
+                position: relative;
+            }
+            @media #{$medium_device}{
+                max-width: 100%;
+                background-color: #ffde28;
+                padding: 80px 40px;
+                z-index: 2;
+                position: relative;
+            }
+            @media #{$big_screen}{
+                padding: 40px 30px;
+            }
+            @media #{$extra_big_screen}{
+                padding: 40px 30px;
+            }
         }
         .cy_post_meta{
             font-size: 16px;

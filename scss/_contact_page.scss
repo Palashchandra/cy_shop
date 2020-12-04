@@ -179,5 +179,56 @@
         @media #{$medium_device}{
             padding: 40px 20px;
         }
+        .contact_info_icon{
+            background-color: $white;
+            i{
+                color: $heading_color;
+            }
+        }
+        .contact_info_details{
+            .desc{
+                color: $heading_color;
+            }
+            a{
+                color: $heading_color;
+                &:hover{
+                    color: $base_color;
+                }
+            }
+        }
+        .cy_contact_info_inner{
+            .title{
+                color: $heading_color;
+                font-size: 20px;
+                text-decoration: underline;
+                font-weight: 700;
+            }
+            li{
+                a{
+                    color: #1e1d25;
+                    font-size: 14px;
+                    font-weight: 400;
+                }
+            }
+            .social_icon{
+                margin-top: 28px;
+                a{
+                    color: #1e1d25;
+                    font-size: 30px;
+                    margin-right: 75px;
+                    @media #{$tab}{
+                        font-size: 20px;
+                        margin-right: 20px;
+                    }
+                    @media #{$medium_device}{
+                        font-size: 20px;
+                        margin-right: 20px;
+                    }
+                    &:hover{
+                        color: $base_color;
+                    }
+                }
+            }
+        }
     }
 }

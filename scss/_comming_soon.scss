@@ -42,11 +42,18 @@
                 top: -28%;
                 font-size: 43px;
                 color: #ffde28;
+                @media #{$tab}{
+                    display: none;
+                }
             }
             &:last-child{
                 &:after{
                     display: none;
                 }
+            }
+            @media #{$tab}{
+                width: auto;
+                padding-right: 20px;
             }
             span {
                 font-size: 50px;
@@ -56,6 +63,9 @@
                 margin-bottom: 10px;
                 display: inline-block;
                 @include transform_time(.3s);
+                @media #{$tab}{
+                    font-size: 25px;
+                }
             }
 
             .dl_desc {
@@ -65,6 +75,9 @@
                 text-transform: uppercase;
                 color: #878c9a;
                 font-family: $bebas_font;
+                @media #{$tab}{
+                    font-size: 16px;
+                }
             }
         }
         .dl_countdown_shape{
@@ -82,16 +95,25 @@
         .comming_soon_page_inner{
             width: 40%;
             float: right;
+            @media #{$tab}{
+                width: 100%;
+            }
         }
         .comming_soon_page_thumb_02{
             position: absolute;
             left: 0;
             top: 0;
+            @media #{$tab}{
+                display: none;
+            }
         }
         .comming_soon_page_thumb_03{
             position: absolute;
             bottom: 0%;
             left: 20%;
+            @media #{$tab}{
+                display: none;
+            }
         }
         .sub_title{
             font-size: 35px;
@@ -100,11 +122,18 @@
             letter-spacing: 12px;
             margin-bottom: 0;
             line-height: 28px;
+            @media #{$tab}{
+                font-size: 20px;
+                letter-spacing: 2px;
+            }
         }
         .title{
             font-size: 70px;
             color:#ed1c16;
             text-transform: uppercase;
+            @media #{$tab}{
+                font-size: 40px;
+            }
         }
         .subscribe_form{
             margin-top: 65px;
@@ -112,6 +141,9 @@
         .comming_soon_page_inner{
             padding: 189px 20px;
             text-align: left;
+            @media #{$tab}{
+                padding: 90px 20px;
+            }
         }
         .dl_countdown_inner span {
             color: #1f1e35;
@@ -132,11 +164,19 @@
     &.comming_soon_style_02{
         text-align: right;
         position: relative;
+        .comming_soon_page_thumb{
+            @media #{$tab}{
+                display: none;
+            }
+        }
         .comming_soon_page_thumb + .comming_soon_page_inner{
             position: absolute;
             width: 50%;
             left: 0;
             top: 0;
+            @media #{$tab}{
+                width: 100%;
+            }
         }
         .sub_title{
             font-size: 35px;
@@ -145,19 +185,48 @@
             letter-spacing: 12px;
             margin-bottom: 0;
             line-height: 28px;
+            @media #{$tab}{
+                font-size: 20px;
+                letter-spacing: 2px;
+            }
         }
         .title{
             font-size: 70px;
             color: rgb(255, 222, 40);
             text-transform: uppercase;
+            @media #{$tab}{
+                font-size: 30px;
+                letter-spacing: 2px;
+            }
         }
         .subscribe_form{
             margin-top: 65px;
+            @media #{$tab}{
+                margin-top: 30px;
+            }
         }
         .comming_soon_page_inner{
             padding: 110px 130px;
             background-color: #26253b;
             text-align: left;
+            @media #{$tab}{
+                padding: 40px 20px;
+                margin-top: 60px;
+            }
+            @media #{$medium_device}{
+                padding: 75px 30px;
+            }
+            @media #{$big_screen}{
+                padding: 85px 50px;
+            }
+            @media #{$extra_big_screen}{
+                padding: 85px 50px;
+            }
+        }
+        @media #{$medium_device}{
+            .comming_soon_page_thumb{
+                max-width: 45%;
+            }
         }
         button{
             font-size: 14px;

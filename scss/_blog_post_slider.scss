@@ -5,16 +5,41 @@
     bottom: -83%;
     right: 0;
     width: 49%;
+    @media #{$tab}{
+        position: relative;
+        bottom: 0;
+        right: 0;
+        width: 100%;
+        padding: 20px;
+        margin-top: 50px;
+    }
+    @media #{$medium_device}{
+        position: relative;
+        bottom: 0;
+        right: 0;
+        width: 100%;
+        padding: 20px;
+        margin-top: 50px;
+    }
 }
 .cy_blog_post_slider_inner{
     display: flex;
     align-items: center;
     margin-bottom: 30px;
+    @media #{$mobile}{
+        display: block;
+        .post_thumb{
+            display: none;
+        }
+    }
     &:last-child{
         margin-bottom: 0;
     }
     .post_content{
         padding: 0 30px;
+        @media #{$mobile}{
+            padding: 20px 0 0;
+        }
         .post_author{
             font-size: 14px;
             color: #878c9a;
@@ -27,6 +52,10 @@
             font-size: 30px;
             line-height: 40px;
             margin-bottom: 0;
+            @media #{$tab}{
+                font-size: 20px;
+                line-height: 28px;
+            }
             a{
                 color: #1f1e35;
             }

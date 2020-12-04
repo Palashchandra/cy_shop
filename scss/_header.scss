@@ -239,13 +239,6 @@
                 }
             }
 
-            @media #{$tab} {
-                margin-right: 30px;
-            }
-            @media #{$medium_device}{
-                margin-right: 35px;
-            }
-
             .cart_item_list {
                 position: absolute;
                 width: 350px;
@@ -261,7 +254,7 @@
 
                 @media #{$mobile} {
                     width: 310px;
-                    right: -105px;
+                    right: -70px;
                 }
             }
 

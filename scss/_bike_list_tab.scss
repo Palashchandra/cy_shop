@@ -5,6 +5,13 @@
         background-color: #fff;
         border-bottom: 0px solid transparent;
         padding: 25px 80px 25px 120px;
+        
+        @media #{$tab}{
+            padding: 25px;
+        }
+        @media #{$medium_device}{
+            padding: 25px;
+        }
         .btn{
             font-size: 45px;
             padding: 0;
@@ -13,6 +20,12 @@
             z-index: 1;
             display: block;
             width: 100%;
+            @media #{$tab}{
+                font-size: 20px;
+            }
+            @media #{$medium_device}{
+                font-size: 20px;
+            }
             &:focus{
                 border: 0px solid transparent;
             }
@@ -26,6 +39,12 @@
                 height: 40px;
                 color: #26253b;
                 font-family: 'themify';
+                @media #{$tab}{
+                    height: 20px;
+                }
+                @media #{$medium_device}{
+                    height: 20px;
+                }
             }
             &.collapsed{
                 &:after{
@@ -36,6 +55,20 @@
     }
     .card-body{
         padding: 0 55px 55px;
+        @media #{$tab}{
+            padding: 0 25px 25px;
+        }
+        @media #{$medium_device}{
+            padding: 0 25px 25px;
+        }
+    }
+    .bike_list_tab_content{
+        @media #{$tab}{
+            margin-top: 20px;
+        }
+        @media #{$medium_device}{
+            margin-top: 20px;
+        }
     }
     .bike_list_tab_inner{
         display: flex;
@@ -50,12 +83,24 @@
             margin-bottom: 0;
             font-size: 35px;
             color: #1f1e35;
+            @media #{$tab}{
+                font-size: 20px;
+            }
+            @media #{$medium_device}{
+                font-size: 20px;
+            }
         }
         .desc{
             padding-left: 80px;
             color: #878c9a;
             font-size: 35px;
             font-family: $bebas_font;
+            @media #{$tab}{
+                font-size: 20px;
+            }
+            @media #{$medium_device}{
+                font-size: 20px;
+            }
         }
     }
 }

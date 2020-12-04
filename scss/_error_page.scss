@@ -2,11 +2,29 @@
     &.error_page_style_01{
        padding: 190px 0 100px;
         text-align: center;
+        @media #{$tab}{
+            padding: 100px 0 70px;
+        }
+        @media #{$medium_device}{
+            padding: 100px 0 70px;
+        }
+        @media #{$big_device}{
+            padding: 100px 0 70px;
+        }
+        @media #{$extra_big_screen}{
+            padding: 100px 0 70px;
+        }
         .title{
             font-size: 256px;
             font-weight: 700;
             line-height: 1;
             margin-bottom: 17px;
+            @media #{$tab}{
+                font-size: 100px;
+            }
+            @media #{$medium_device}{
+                font-size: 100px;
+            }
             span{
                 color: #ed1c16;
             }
@@ -16,6 +34,9 @@
             font-weight: 700;
             color: $heading_color;
             font-family: $bebas_font; 
+            @media #{$tab}{
+                font-size: 25px;
+            }
         }
         .cu_btn{
             margin-top: 124px;
@@ -25,11 +46,15 @@
     &.error_page_style_02{
         text-align: right;
         position: relative;
+
         .error_page_thumb + .error_pagr_inner{
             position: absolute;
             width: 59%;
             left: 0;
             top: 0;
+            @media #{$tab}{
+                width: 70%;
+            }
             .cu_btn {
                 position: absolute;
                 right: 0;
@@ -51,6 +76,10 @@
         }
         .error_icon{
             margin-bottom: -65px;
+            @media #{$tab}{
+                margin-bottom: 10px;
+                max-width: 50%;
+            }
         }
         .title{
             font-size: 256px;
@@ -58,6 +87,9 @@
             line-height: 1;
             margin-bottom: 17px;
             color: $white;
+            @media #{$tab}{
+                font-size: 100px;
+            }
             span{
                 color: #ffde28;
             }
@@ -67,6 +99,9 @@
             font-weight: 700;
             color: #878c9a;
             font-family: $bebas_font; 
+            @media #{$tab}{
+                font-size: 25px;
+            }
         }
     }
 }

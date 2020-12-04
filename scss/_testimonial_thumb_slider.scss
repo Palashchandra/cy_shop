@@ -28,6 +28,14 @@
         position: absolute;
         right: 0;
         bottom: 0;
+        @media #{$tab}{
+            position: relative;
+            padding: 80px 30px 20px;
+            max-width: 100%;
+        }
+        @media #{$medium_device}{
+            padding: 80px 30px 20px;
+        }
         .desc{
             color: $white;
             font-size: 35px;
@@ -35,6 +43,10 @@
             line-height: 50px;
             font-weight: 500;
             font-style: italic;
+            @media #{$tab}{
+                font-size: 30px;
+                line-height: 38px;
+            }
         }
         .quote_icon{
             position: absolute;
@@ -91,12 +103,21 @@
         width: 63%;
         background-color: #fff;
         padding: 90px 95px 112px;
+        @media #{$tab}{
+            position: relative;
+            width: 100%;
+            padding: 30px;
+        }
         .content{
             font-size: 35px;
             line-height: 50px;
             font-family: $dm_sans;
             font-style: italic;
             text-align: center;
+            @media #{$tab}{
+                font-size: 20px;
+                line-height: 28px;
+            }
         }
     }
 }

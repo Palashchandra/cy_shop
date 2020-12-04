@@ -20,6 +20,9 @@
             margin-right: 40px;
             font-size: 18px;
             display: inline-block;
+            &:hover{
+                color: $base_color;
+            }
             &:last-child{
                 margin-right: 0;
             }
@@ -50,6 +53,9 @@
                 display: inline-block;
                 margin: 9px 0;
                 line-height: 27px;
+                &:hover{
+                    color: $base_color;
+                }
             }
         }
     }
@@ -72,6 +78,14 @@
     z-index: -1;
     @media #{$mobile}{
         display: none;
+    }
+    @media #{$medium_device}{
+        max-width: 66%;
+        height: 100%;
+    }
+    @media #{$big_screen}{
+        max-width: 66%;
+        height: 100%;
     }
 }
 .subscribe_from{
@@ -115,6 +129,13 @@
        padding: 0;
        margin: 0;
        z-index: 7;
+       @media #{$mobile}{
+           position: relative;
+           top: auto;
+           transform: translateY(0);
+           width: 100%;
+           right: 0 !important;
+       }
    }
 }
 .copyright_text{

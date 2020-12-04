@@ -137,7 +137,19 @@
             fixedContentPos: false
         });
     }
-
+    //video popup
+    var product_btn_popup = $('.product_btn_popup');
+    if (product_btn_popup.length > 0) {
+        product_btn_popup.magnificPopup({
+            delegate: '.product_btn',
+            type: 'image',
+            gallery: {
+                enabled: true,
+                navigateByImgClick: true,
+                preload: [0,1]
+            },
+        });
+    }
 
     // easying js code 
     $('.page-scroll').bind('click', function (event) {
@@ -370,34 +382,7 @@
         $(".sk-chase-dot").delay(1000).fadeOut("slow");
     });
 
-    //banner slider
-    var swiper_slider_active = document.getElementsByClassName("swiper_slider_active");
-    if (swiper_slider_active.length) {
-        var swiper_slider_active = $('.swiper_slider_active');
-        if (swiper_slider_active.length) {
-            var menu = ['GREY METALLIC', 'GREY ALLIC', 'METALLIC']
-            var mySwiper = new Swiper('.swiper_slider_active', {
-                pagination: {
-                    el: '.swiper-pagination',
-                    clickable: true,
-                    renderBullet: function (index, className) {
-                        return '<span class="' + className + '"><p> ' + (menu[index]) + '</p> </span>';
-                    },
-                },
-                effect: "fade",
-                autoplay: {
-                    delay: 500000000,
-                },
-                fadeEffect: {
-                    crossFade: true
-                },
-                navigation: {
-                    nextEl: '.swiper-button-next',
-                    prevEl: '.swiper-button-prev',
-                },
-            })
-        };
-    }
+    
 
     //banner slider
     var swiper_slider_active = document.getElementsByClassName("swiper_slider_active");
@@ -472,6 +457,18 @@
             },
             autoplay: {
                 delay: 500000000,
+            },
+            breakpoints: {
+                // when window width is >= 320px
+                320: {
+                   spaceBetween: 40
+                },
+                768: {
+                    spaceBetween: 20
+                },
+                1024: {
+                    spaceBetween: 100
+                }
             }
         })
     }
@@ -488,6 +485,19 @@
             },
             autoplay: {
                 delay: 500000000,
+            },
+            // Responsive breakpoints
+            breakpoints: {
+                // when window width is >= 320px
+                320: {
+                   spaceBetween: 40
+                },
+                768: {
+                    spaceBetween: 20
+                },
+                1024: {
+                    spaceBetween: 100
+                }
             }
         })
     }
@@ -603,6 +613,35 @@
             $n.val(amount - 1);
         }
     });
+
+    //banner slider
+    var swiper_slider_active = document.getElementsByClassName("swiper_slider_active");
+    if (swiper_slider_active.length) {
+        var swiper_slider_active = $('.swiper_slider_active');
+        if (swiper_slider_active.length) {
+            var menu = ['GREY METALLIC', 'GREY ALLIC', 'METALLIC']
+            var mySwiper = new Swiper('.swiper_slider_active', {
+                pagination: {
+                    el: '.swiper-pagination',
+                    clickable: true,
+                    renderBullet: function (index, className) {
+                        return '<span class="' + className + '"><p> ' + (menu[index]) + '</p> </span>';
+                    },
+                },
+                effect: "fade",
+                autoplay: {
+                    delay: 500000000,
+                },
+                fadeEffect: {
+                    crossFade: true
+                },
+                navigation: {
+                    nextEl: '.swiper-button-next',
+                    prevEl: '.swiper-button-prev',
+                },
+            })
+        };
+    }
     
 
 

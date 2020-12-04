@@ -53,9 +53,6 @@
 }
 
 .video_popup_section {
-    @media #{$mobile}{
-        margin-bottom: 40px;
-    }
     .video_popup {
         position: absolute;
         left: 0;
@@ -63,6 +60,11 @@
         margin: 0 auto;
         top: 50%;
         transform: translateY(-50%);
+        @media #{$tab}{
+            position: relative;
+            top: 0;
+            transform: translateY(0);
+         }
         img{
             border-radius: 0;
             position: absolute;
@@ -98,6 +100,9 @@
 .featured_part_content{
     @media (min-width: 1450px){
         padding: 0 40px;
+    }
+    @media #{$tab}{
+        margin-bottom: 40px;
     }
     .featured_title{
         font-size: 50px;

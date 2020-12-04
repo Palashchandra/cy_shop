@@ -1,11 +1,23 @@
 .cy_icon_box_wrapper{
+    @media #{$tab}{
+        margin-bottom: 40px;
+    }
     .icon{
         margin-bottom: 56px;
+        @media #{$mobile}{
+            margin-bottom: 25px;
+        }
+        @media #{$tab_device}{
+            margin-bottom: 30px;
+        }
     }
     .title{
         font-style: 35px;
     }
     .desc{
         margin-top: 18px;
+        @media #{$tab}{
+            margin-top: 10px;
+        }
     }
 }
