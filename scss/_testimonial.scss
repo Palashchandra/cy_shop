@@ -2,10 +2,9 @@
     .single_testimonial_slider{
         text-align: center;
         .quote_icon{
-            font-size: 225px;
-            line-height: 50px;
+            line-height: 1;
             color: #a7a7a7;
-            margin-bottom: 80px;
+            margin-bottom: 63px;
             display: inline-block;
             @media #{$tab}{
                 margin-bottom: 20px;

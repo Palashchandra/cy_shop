@@ -35,9 +35,17 @@
             font-size: 55px;
             line-height: 70px;
             margin-bottom: 72px;
-            @media #{$tab}{
-                font-size: 25px;
-                line-height: 35px;
+            @media #{$xs_mobile}{
+                font-size: 30px;
+                line-height: 38px;
+            }
+            @media #{$large_mobile}{
+                font-size: 45px;
+                line-height: 55px;
+            }
+            @media #{$tab_device}{
+                font-size: 45px;
+                line-height: 55px;
             }
         }
     }

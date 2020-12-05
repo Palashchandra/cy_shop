@@ -60,11 +60,11 @@
         margin: 0 auto;
         top: 50%;
         transform: translateY(-50%);
-        @media #{$tab}{
-            position: relative;
-            top: 0;
-            transform: translateY(0);
-         }
+        // @media #{$tab}{
+        //     position: relative;
+        //     top: 0;
+        //     transform: translateY(0);
+        // }
         img{
             border-radius: 0;
             position: absolute;
@@ -102,7 +102,7 @@
         padding: 0 40px;
     }
     @media #{$tab}{
-        margin-bottom: 40px;
+        margin-top: 30px;
     }
     .featured_title{
         font-size: 50px;
@@ -139,9 +139,6 @@
 }
 
 .bike_featured_thumb{
-    @media #{$mobile}{
-        margin-top: 40px;
-    }
     img{
         border-radius: 248px 0 0 0;
     }

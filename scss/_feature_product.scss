@@ -1,3 +1,14 @@
+.feature_product{
+    &.sec_padding{
+        padding: 265px 0 120px;
+        @media #{$tab}{
+            padding: 120px 0 80px;
+        }
+        @media #{$medium_device}{
+            padding: 120px 0 100px;
+        }
+    }
+}
 .cy_featured_product_img{
     position: relative;
     .product_img{
@@ -45,6 +56,9 @@
 }
 .cy_featured_product_img + .cy_featured_product_desc{
     margin-top: 154px;
+    &.mt_80{
+        margin-top: 80px;
+    }
 }
 .cy_featured_product_desc{
     position: relative;
@@ -58,7 +72,7 @@
 
     }
     .title + .cu_btn{
-        margin-top: 43px;
+        margin-top: 33px;
         @media #{$tab}{
             margin-top: 25px;
         }

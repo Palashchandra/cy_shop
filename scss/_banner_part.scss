@@ -105,6 +105,7 @@
         position: absolute;
         bottom: 86px;
         right: 26px;
+        z-index: -1;
         @media #{$mobile}{
             max-width: 79%;
             bottom: 226px;
@@ -452,6 +453,10 @@
         text-align: center;
         margin: 0 auto;
         bottom: 0;
+        &:hover{
+            background-color: $white;
+            border-color: #fff;
+        }
         @media #{$mobile}{
             bottom: -100px;
         }

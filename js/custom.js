@@ -2,14 +2,14 @@
     "use strict";
 
     //sticky menu
-    // $(window).on('scroll', function () {
-    //     var window_top = $(window).scrollTop() + 0;
-    //     if (window_top > 150) {
-    //         $('.header_part , .classic_header, .fixed_menu ').addClass('menu_fixed animated slideInDown');
-    //     } else {
-    //         $('.header_part , .classic_header, .fixed_menu').removeClass('menu_fixed animated slideInDown');
-    //     }
-    // });
+    $(window).on('scroll', function () {
+        var window_top = $(window).scrollTop() + 0;
+        if (window_top > 150) {
+            $('.header_part , .classic_header, .fixed_menu ').addClass('menu_fixed animated slideInDown');
+        } else {
+            $('.header_part , .classic_header, .fixed_menu').removeClass('menu_fixed animated slideInDown');
+        }
+    });
 
 
     //menu icon

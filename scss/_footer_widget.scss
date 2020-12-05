@@ -1,6 +1,9 @@
 .cy_single_footer_widget{
     @media #{$tab}{
         margin-bottom: 40px;
+        .footer_logo{
+            max-width: 110px;
+        }
     }
     .footer_logo + .desc{
         margin-top: 50px;
@@ -11,7 +14,7 @@
     .desc + .social_icon{
         margin-top: 170px;
         @media #{$tab}{
-            margin-top: 30px;
+            margin-top: 20px;
         }
     }
     .social_icon{
@@ -36,7 +39,6 @@
         color: $white;
         @media #{$mobile}{
             margin-bottom: 20px;
-            color: $heading_color;
         }
         @media #{$tab_device}{
             margin-bottom: 20px;
@@ -76,7 +78,7 @@
     right: 0;
     bottom: 0;
     z-index: -1;
-    @media #{$mobile}{
+    @media #{$tab}{
         display: none;
     }
     @media #{$medium_device}{
@@ -90,8 +92,8 @@
 }
 .subscribe_from{
     margin-top: 100px;
-    @media #{$tab_device}{
-        margin-top: 40px;
+    @media #{$tab}{
+        margin-top: 20px;
     }
 }
 .subscribe_from_content{
@@ -99,7 +101,7 @@
         font-size: 30px;
         line-height: 40px;
         color: $white;
-        @media #{$mobile}{
+        @media #{$tab}{
             color: $heading_color;
         }
     }

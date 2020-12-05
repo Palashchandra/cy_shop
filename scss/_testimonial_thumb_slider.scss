@@ -17,6 +17,12 @@
         box-shadow: 0.785px 14.979px 30px 0px rgba(27, 27, 27, 0.4);
     }
 }
+.thumbnail_testimonial_content{
+    @include transform_time(.3s);
+    &:Hover{
+        box-shadow: 0.785px 14.979px 30px 0px rgba(27, 27, 27, 0.4);
+    }
+}
 .testimonial_gallery_thumbs_wrapper{
     position: relative;
     .thumbnail_testimonial_content{

@@ -578,6 +578,9 @@
         .title{
             a{
                 color: $heading_color;
+                &:hover{
+                    color: $base_color;
+                }
             }
         }
         .desc{
@@ -645,6 +648,9 @@
             font-size: 45px;
             a{
                 color: $heading_color;
+                &:hover{
+                    color: $base_color;
+                }
             }
         }
         .desc{
