@@ -2037,11 +2037,6 @@ button:focus {
     font-size: 12px;
   }
 }
-.header_part .header_right_option .cart_option .cart_option_btn .cu_btn:hover {
-  color: #fff;
-  border: 2px solid #f77991;
-  background-color: #f77991;
-}
 .header_part .header_right_option .cart_option .cart_option_btn .cu_btn:last-child {
   margin-right: 0;
 }
@@ -3096,8 +3091,8 @@ button:focus {
 }
 .pc_banner_part_style_2 .swiper-pagination {
   position: absolute;
-  top: 100px;
-  right: 9%;
+  top: 23%;
+  right: 6%;
   display: grid;
   text-align: left;
 }
@@ -3139,6 +3134,7 @@ button:focus {
   visibility: hidden;
   -webkit-transition: 0.3s;
   transition: 0.3s;
+  text-transform: capitalize;
 }
 .pc_banner_part_style_2 .swiper-pagination-bullet:after {
   position: absolute;
@@ -3159,12 +3155,33 @@ button:focus {
 .pc_banner_part_style_2 .swiper-pagination-bullet:hover:after {
   border: 2px solid #fff;
 }
+.pc_banner_part_style_2 .banner_pag_style_02 .swiper-pagination-bullet:nth-child(1):after {
+  background-color: #ffffff;
+}
+.pc_banner_part_style_2 .banner_pag_style_02 .swiper-pagination-bullet:nth-child(2):after {
+  background-color: #363637;
+}
+.pc_banner_part_style_2 .banner_pag_style_02 .swiper-pagination-bullet:nth-child(3):after {
+  background-color: #f40000;
+}
 .pc_banner_part_style_2 .swiper-pagination-bullet-active p {
   opacity: 1;
   visibility: visible;
 }
 .pc_banner_part_style_2 .swiper-pagination-bullet-active:after {
   border: 2px solid #fff;
+}
+.pc_banner_part_style_2 .banner_pag_style_02 .swiper-pagination-bullet-active:nth-child(1):after {
+  border-color: #dcdcdc;
+  box-shadow: 0px 3px 9.5px 0.5px rgba(58, 58, 58, 0.45);
+}
+.pc_banner_part_style_2 .banner_pag_style_02 .swiper-pagination-bullet-active:nth-child(2):after {
+  border-color: #fff;
+  box-shadow: 0px 3px 9.5px 0.5px rgba(58, 58, 58, 0.45);
+}
+.pc_banner_part_style_2 .banner_pag_style_02 .swiper-pagination-bullet-active:nth-child(3):after {
+  border-color: #fff;
+  box-shadow: 0px 3px 9.5px 0.5px rgba(58, 58, 58, 0.45);
 }
 .pc_banner_part_style_2 .pc_banner_content .banner_title {
   font-size: 155px;
@@ -5591,6 +5608,10 @@ button:focus {
   top: 0;
   z-index: 1;
 }
+.cy_line_shape_02.cy_line_shape_img_style_02 {
+  top: 200px;
+  right: 100px;
+}
 
 .cy_about_content .sub_title {
   font-size: 16px;
@@ -7543,12 +7564,7 @@ button:focus {
     padding: 100px 0 70px;
   }
 }
-@media (min-width: 991px) {
-  .error_page_wrapper.error_page_style_01 {
-    padding: 100px 0 70px;
-  }
-}
-@media only screen and (min-width: 1440px) and (max-width: 1680px) {
+@media only screen and (min-width: 1200px) and (max-width: 1439px) {
   .error_page_wrapper.error_page_style_01 {
     padding: 100px 0 70px;
   }

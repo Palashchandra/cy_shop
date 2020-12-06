@@ -619,7 +619,7 @@
     if (swiper_slider_active.length) {
         var swiper_slider_active = $('.swiper_slider_active');
         if (swiper_slider_active.length) {
-            var menu = ['GREY METALLIC', 'GREY ALLIC', 'METALLIC']
+            var menu = ['Gray Metallic', 'Gray Allic', 'Metallic']
             var mySwiper = new Swiper('.swiper_slider_active', {
                 pagination: {
                     el: '.swiper-pagination',

@@ -8,10 +8,7 @@
         @media #{$medium_device}{
             padding: 100px 0 70px;
         }
-        @media #{$big_device}{
-            padding: 100px 0 70px;
-        }
-        @media #{$extra_big_screen}{
+        @media #{$big_screen}{
             padding: 100px 0 70px;
         }
         .title{
