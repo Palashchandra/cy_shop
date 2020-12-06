@@ -1899,6 +1899,12 @@ button:focus {
 .header_part .header_right_option {
   display: flex;
   align-items: center;
+  margin-left: 110px;
+}
+@media (max-width: 991px) {
+  .header_part .header_right_option {
+    margin-left: 0;
+  }
 }
 .header_part .header_right_option .burger_icon {
   position: relative;
@@ -2112,23 +2118,6 @@ button:focus {
   padding: 6px 2px;
   line-height: 14px;
 }
-.header_part.classic_header .navbar .nav-link:before {
-  content: "";
-  position: absolute;
-  left: auto;
-  right: 0;
-  bottom: 0;
-  height: 1px;
-  width: 0;
-  -webkit-transition: width 0.6s cubic-bezier(0.25, 0.8, 0.25, 1) 0s;
-  transition: width 0.6s cubic-bezier(0.25, 0.8, 0.25, 1) 0s;
-  background: currentColor;
-}
-.header_part.classic_header .navbar .nav-link:hover:before {
-  width: 100%;
-  left: 0;
-  right: auto;
-}
 @media (max-width: 991px) {
   .header_part.classic_header .navbar .nav-link {
     display: block;
@@ -2144,7 +2133,7 @@ button:focus {
 }
 .header_part.classic_header .navbar .dropdown-menu {
   margin: 0;
-  padding: 16px 0;
+  padding: 25px;
   border: 0px solid transparent;
   box-shadow: 0px 5px 10px #14303a15;
   -webkit-transition: 0.4s;
@@ -2174,19 +2163,23 @@ button:focus {
     padding: 0;
   }
 }
+.header_part.classic_header .navbar .dropdown-menu li {
+  margin-bottom: 12px;
+}
+.header_part.classic_header .navbar .dropdown-menu li:last-child {
+  margin-bottom: 0;
+}
 .header_part.classic_header .navbar .dropdown-menu .dropdown-item {
-  padding: 7px 25px;
-  text-transform: capitalize;
-  font-size: 16px;
-  color: #777;
-  letter-spacing: 1;
+  padding: 13px 25px;
+  font-size: 14px;
+  color: #26253b;
   font-weight: 400;
   display: inline-block;
+  background-color: #eeeeee;
+  text-transform: uppercase;
+  text-align: center;
 }
 .header_part.classic_header .navbar .dropdown-menu .dropdown-item.current {
-  color: #1f1e35;
-}
-.header_part.classic_header .navbar .dropdown-menu .dropdown-item:hover {
   color: #1f1e35;
 }
 .header_part.classic_header .navbar .dropdown-menu .dropdown-item.disable {
@@ -2197,7 +2190,8 @@ button:focus {
   color: #f474bb;
 }
 .header_part.classic_header .navbar .dropdown-menu .dropdown-item:focus, .header_part.classic_header .navbar .dropdown-menu .dropdown-item:hover {
-  background-color: transparent;
+  background-color: #ed1c16;
+  color: #fff;
 }
 .header_part.classic_header .navbar .dropdown:hover > .dropdown-item {
   color: #111;
@@ -2226,13 +2220,21 @@ button:focus {
   transition: 0.3s;
   position: absolute;
   right: 25px;
-  top: 10px;
+  top: 50%;
+  transform: translateY(-50%);
 }
 @media (max-width: 991px) {
   .header_part.classic_header .navbar .dropdown .dropdown .dropdown-toggle::after {
     display: inline-block;
     transform: rotate(0);
   }
+}
+.header_part.classic_header .navbar .dropdown .dropdown .dropdown-toggle:focus, .header_part.classic_header .navbar .dropdown .dropdown .dropdown-toggle:hover {
+  background-color: #ed1c16;
+  color: #fff;
+}
+.header_part.classic_header .navbar .dropdown .dropdown .dropdown-toggle:focus::after, .header_part.classic_header .navbar .dropdown .dropdown .dropdown-toggle:hover::after {
+  color: #fff;
 }
 @media (max-width: 991px) {
   .header_part.classic_header .navbar .dropdown .dropdown-toggle.active_icon::after {
@@ -2248,10 +2250,16 @@ button:focus {
 .header_part.dark .navbar .nav-link {
   color: #1f1e35;
 }
+.header_part.dark .navbar .nav-link:hover {
+  color: #ed1c16;
+}
 @media (max-width: 991px) {
   .header_part.dark .navbar .nav-link {
     color: #1f1e35;
   }
+}
+.header_part.dark .nav-item:hover .nav-link {
+  color: #ed1c16;
 }
 .header_part.dark .navbar .dropdown .dropdown-toggle::after {
   color: #1f1e35;
@@ -2667,29 +2675,6 @@ button:focus {
   -webkit-transition: -webkit-transform 0.6s cubic-bezier(0.165, 0.84, 0.44, 1) 0.2s;
   transition: transform 0.6s cubic-bezier(0.165, 0.84, 0.44, 1) 0.2s;
   transition: transform 0.6s cubic-bezier(0.165, 0.84, 0.44, 1) 0.2s, -webkit-transform 0.6s cubic-bezier(0.165, 0.84, 0.44, 1) 0.2s;
-}
-
-@media (min-width: 911px) and (max-width: 1650px) {
-  .classic_header .dropdown-menu .dropdown-menu {
-    left: -100% !important;
-  }
-}
-.sub_header {
-  padding-top: 20px;
-  padding-bottom: 20px;
-}
-.sub_header .description,
-.sub_header .phone {
-  font-size: 14px;
-  line-height: 1.78;
-  color: #fff;
-}
-.sub_header .description i,
-.sub_header .phone i {
-  margin-right: 10px;
-}
-.sub_header .phone {
-  margin-right: 30px;
 }
 
 .pc_banner_part {
