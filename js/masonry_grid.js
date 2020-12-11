@@ -185,7 +185,7 @@
 			}
 			return this.each(function () {
 				$el = $(this);
-				$grid = $el.find('.dl_addons_grid');
+				$grid = $el.find('.cy_addons_grid');
 
 				var settings = $el.data('grid');
 				var gridData;

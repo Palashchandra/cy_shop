@@ -1,9 +1,9 @@
-var pc_element = pc_element || {};
+var cy_element = cy_element || {};
 ! function (p) {
     "use strict";
-    pc_element.pc_initialize = {
+    cy_element.cy_initialize = {
         init: function () {
-            pc_element.pc_initialize.swiperSlider(), pc_element.pc_initialize.owlCarousel()
+            cy_element.cy_initialize.swiperSlider(), cy_element.cy_initialize.owlCarousel()
         },
         swiperSlider: function () {
             p(".swiper-container").each(function () {
@@ -95,9 +95,9 @@ var pc_element = pc_element || {};
                 });
             })
         }
-    }, pc_element.documentOnReady = {
+    }, cy_element.documentOnReady = {
         init: function () {
-            pc_element.pc_initialize.init()
+            cy_element.cy_initialize.init()
         }
-    }, p(document).ready(pc_element.documentOnReady.init)
+    }, p(document).ready(cy_element.documentOnReady.init)
 }(jQuery);

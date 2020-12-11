@@ -1,10 +1,10 @@
-.dl_cd_words_wrapper {
+.cy_cd_words_wrapper {
     display: inline-block;
     position: relative;
     text-align: left;
 }
 
-.dl_cd_words_wrapper b {
+.cy_cd_words_wrapper b {
     display: inline-block;
     position: absolute;
     white-space: nowrap;
@@ -12,15 +12,15 @@
     top: 0;
 }
 
-.dl_cd_words_wrapper b.is-visible {
+.cy_cd_words_wrapper b.is-visible {
     position: relative;
 }
 
-.no-js .dl_cd_words_wrapper b {
+.no-js .cy_cd_words_wrapper b {
     opacity: 0;
 }
 
-.no-js .dl_cd_words_wrapper b.is-visible {
+.no-js .cy_cd_words_wrapper b.is-visible {
     opacity: 1;
 }
 
@@ -29,7 +29,7 @@
   xrotate-1 
   
   -------------------------------- */
-.cd_animated_headline.rotate-1 .dl_cd_words_wrapper {
+.cd_animated_headline.rotate-1 .cy_cd_words_wrapper {
     -webkit-perspective: 300px;
     -moz-perspective: 300px;
     perspective: 300px;
@@ -227,12 +227,12 @@
   xtype 
   
   -------------------------------- */
-.cd_animated_headline.type .dl_cd_words_wrapper {
+.cd_animated_headline.type .cy_cd_words_wrapper {
     vertical-align: top;
     overflow: hidden;
 }
 
-.cd_animated_headline.type .dl_cd_words_wrapper::after {
+.cd_animated_headline.type .cy_cd_words_wrapper::after {
     /* vertical bar */
     content: '';
     position: absolute;
@@ -249,21 +249,21 @@
     background-color: #aebcb9;
 }
 
-.cd_animated_headline.type .dl_cd_words_wrapper.waiting::after {
+.cd_animated_headline.type .cy_cd_words_wrapper.waiting::after {
     -webkit-animation: cd-pulse 1s infinite;
     -moz-animation: cd-pulse 1s infinite;
     animation: cd-pulse 1s infinite;
 }
 
-.cd_animated_headline.type .dl_cd_words_wrapper.selected {
+.cd_animated_headline.type .cy_cd_words_wrapper.selected {
     background-color: #aebcb9;
 }
 
-.cd_animated_headline.type .dl_cd_words_wrapper.selected::after {
+.cd_animated_headline.type .cy_cd_words_wrapper.selected::after {
     visibility: hidden;
 }
 
-.cd_animated_headline.type .dl_cd_words_wrapper.selected b {
+.cd_animated_headline.type .cy_cd_words_wrapper.selected b {
     color: #0d0d0d;
 }
 
@@ -353,7 +353,7 @@
   xrotate-2 
   
   -------------------------------- */
-.cd_animated_headline.rotate-2 .dl_cd_words_wrapper {
+.cd_animated_headline.rotate-2 .cy_cd_words_wrapper {
     -webkit-perspective: 300px;
     -moz-perspective: 300px;
     perspective: 300px;
@@ -565,12 +565,12 @@
     padding: .2em 0;
 }
 
-.cd_animated_headline.loading-bar .dl_cd_words_wrapper {
+.cd_animated_headline.loading-bar .cy_cd_words_wrapper {
     overflow: hidden;
     vertical-align: top;
 }
 
-.cd_animated_headline.loading-bar .dl_cd_words_wrapper::after {
+.cd_animated_headline.loading-bar .cy_cd_words_wrapper::after {
     /* loading bar */
     content: '';
     position: absolute;
@@ -585,7 +585,7 @@
     transition: width 0.3s -0.1s;
 }
 
-.cd_animated_headline.loading-bar .dl_cd_words_wrapper.is-loading::after {
+.cd_animated_headline.loading-bar .cy_cd_words_wrapper.is-loading::after {
     width: 100%;
     -webkit-transition: width 3s;
     -moz-transition: width 3s;
@@ -615,7 +615,7 @@
     padding: .2em 0;
 }
 
-.cd_animated_headline.slide .dl_cd_words_wrapper {
+.cd_animated_headline.slide .cy_cd_words_wrapper {
     overflow: hidden;
     vertical-align: top;
 }
@@ -775,12 +775,12 @@
     padding: .2em 0;
 }
 
-.cd_animated_headline.clip .dl_cd_words_wrapper {
+.cd_animated_headline.clip .cy_cd_words_wrapper {
     overflow: hidden;
     vertical-align: top;
 }
 
-.cd_animated_headline.clip .dl_cd_words_wrapper::after {
+.cd_animated_headline.clip .cy_cd_words_wrapper::after {
     /* line */
     content: '';
     position: absolute;
@@ -804,7 +804,7 @@
   xzoom 
   
   -------------------------------- */
-.cd_animated_headline.zoom .dl_cd_words_wrapper {
+.cd_animated_headline.zoom .cy_cd_words_wrapper {
     -webkit-perspective: 300px;
     -moz-perspective: 300px;
     perspective: 300px;
@@ -920,7 +920,7 @@
   xrotate-3 
   
   -------------------------------- */
-.cd_animated_headline.rotate-3 .dl_cd_words_wrapper {
+.cd_animated_headline.rotate-3 .cy_cd_words_wrapper {
     -webkit-perspective: 300px;
     -moz-perspective: 300px;
     perspective: 300px;
@@ -1467,7 +1467,7 @@
                 font-size: 28px;
             }
         }
-        .dl_cd_words_wrapper{
+        .cy_cd_words_wrapper{
             font-weight: 300;
         }
     }

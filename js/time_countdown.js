@@ -1,8 +1,8 @@
 'use strict';
 $(function () {
-	let mainClass = '.dl_countdown_content';
+	let mainClass = '.cy_countdown_content';
 	let OffsetLocation = -4;
-	let runningClass = '.dl_countdown_running'; //optinonal
+	let runningClass = '.cy_countdown_running'; //optinonal
 	let endedClass = ".ended"; //optional
 	//init
 	let date, fixTime, index = 0,
@@ -53,11 +53,11 @@ $(function () {
 			if (zeroPadArr['Seconds'] != "false") dif[3] = String(dif[3]).padStart(2, '0');
 			//replace text with or without extra class
 			//whith extras Class
-			if ($('.' + extraClass + ' ' + runningClass + '.dl_countdown_running').length) {
-				$('.' + extraClass + ' ' + runningClass + '.dl_countdown_running .dl_days').text(dif[0]);
-				$('.' + extraClass + ' ' + runningClass + '.dl_countdown_running .dl_hours').text(dif[1]);
-				$('.' + extraClass + ' ' + runningClass + '.dl_countdown_running .dl_minutes').text(dif[2]);
-				$('.' + extraClass + ' ' + runningClass + '.dl_countdown_running .dl_seconds').text(dif[3]);
+			if ($('.' + extraClass + ' ' + runningClass + '.cy_countdown_running').length) {
+				$('.' + extraClass + ' ' + runningClass + '.cy_countdown_running .cy_days').text(dif[0]);
+				$('.' + extraClass + ' ' + runningClass + '.cy_countdown_running .cy_hours').text(dif[1]);
+				$('.' + extraClass + ' ' + runningClass + '.cy_countdown_running .cy_minutes').text(dif[2]);
+				$('.' + extraClass + ' ' + runningClass + '.cy_countdown_running .cy_seconds').text(dif[3]);
 
 			} else {
 				//replace parts without extra Class

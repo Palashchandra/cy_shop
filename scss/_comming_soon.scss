@@ -1,5 +1,5 @@
 .comming_soon_page_wrapper{
-    .dl_colum_4 {
+    .cy_colum_4 {
         -webkit-column-count: 4;
         -moz-column-count: 4;
         column-count: 4;
@@ -24,9 +24,9 @@
             column-count: 2;
         }
     }
-    .dl_countdown_wrapper {
+    .cy_countdown_wrapper {
         position: relative;
-        .dl_countdown_inner {
+        .cy_countdown_inner {
             padding-right: 40px;
             margin-top: 30px;
             width: 100%;
@@ -68,7 +68,7 @@
                 }
             }
 
-            .dl_desc {
+            .cy_desc {
                 font-weight: 400;
                 font-size: 30px;
                 line-height: 15px;
@@ -80,7 +80,7 @@
                 }
             }
         }
-        .dl_countdown_shape{
+        .cy_countdown_shape{
             position: absolute;
             bottom: 0;
             right: -87%;
@@ -146,10 +146,10 @@
                 padding: 90px 20px;
             }
         }
-        .dl_countdown_inner span {
+        .cy_countdown_inner span {
             color: #1f1e35;
         }
-        .dl_countdown_inner .dl_desc {
+        .cy_countdown_inner .cy_desc {
             color: #878c9a;
         }
         button{

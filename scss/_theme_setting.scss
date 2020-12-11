@@ -1,4 +1,4 @@
-.dl_color-theme-demos{
+.cy_color-theme-demos{
     color: #000;
     position: fixed;
     top: 0;
@@ -8,11 +8,11 @@
     z-index: 999;
     height: 100%;
     visibility: visible;
-    .dl_skin-body{
+    .cy_skin-body{
         height: 100%;
         position: relative;
         overflow: hidden;
-        .dl_skin-wrap{
+        .cy_skin-wrap{
             height: 100%;
             position: absolute;
             overflow-y: scroll;
@@ -26,7 +26,7 @@
         box-shadow: -3px 0px 10px 0px rgba(26, 38, 74, 0.15);
     }
 }
-.dl_setting_icon{
+.cy_setting_icon{
     background: #fff none repeat scroll 0 0;
     color: #fff;
     font-size: 24px;
@@ -38,7 +38,7 @@
     box-shadow: -3px 0px 10px 0px rgba(26, 38, 74, 0.15);
     padding: 15px 0;
     border-radius: 10px 0 0 10px;
-    .dl_tooltip_bounce{
+    .cy_tooltip_bounce{
         width: 100%;
     }
     i{
@@ -47,8 +47,8 @@
     }
 }
 
-.dl_sw-demo{
-    .dl_set-theme-style{
+.cy_sw-demo{
+    .cy_set-theme-style{
         float: left;
         padding: 10px;
         width: 50%;

@@ -43,7 +43,7 @@
     wow.init();
 
     //offcanvus menu js
-    $("#dl_collaps_menu_icon").on('click', function () {
+    $("#cy_collaps_menu_icon").on('click', function () {
         $('.canvus_menu').addClass("canvus_active")
     });
     $(".canvus_close_icon").on('click', function () {
@@ -159,7 +159,7 @@
         }
     });
 
-    var bttHeadroom = new Headroom(document.getElementById("dl_scorl_top"), {
+    var bttHeadroom = new Headroom(document.getElementById("cy_scorl_top"), {
         tolerance: 0,
         offset: 500,
         tolerance: {
@@ -175,8 +175,8 @@
     });
     bttHeadroom.init();
 
-    var dl_scorl_top = $('#dl_scorl_top');
-    dl_scorl_top.on('click', function (e) {
+    var cy_scorl_top = $('#cy_scorl_top');
+    cy_scorl_top.on('click', function (e) {
         e.preventDefault();
         $('html, body').animate({
             scrollTop: 0
@@ -341,25 +341,25 @@
 
 
     // Preset
-    if ($(".dl_color-theme-demos").length > 0) {
+    if ($(".cy_color-theme-demos").length > 0) {
         //switcher 
         var switchs = true;
         $(".settingBtn").on("click", function (e) {
             e.preventDefault();
             if (switchs) {
                 $(this).addClass("active");
-                $(".dl_color-theme-demos").animate({
+                $(".cy_color-theme-demos").animate({
                     "right": "0px"
                 }, 400);
                 switchs = false;
             } else {
                 $(this).removeClass("active");
-                $(".dl_color-theme-demos").animate({
+                $(".cy_color-theme-demos").animate({
                     "right": "-270px"
                 }, 400);
                 switchs = true;
             }
-            $('.dl_color-theme-demos').toggleClass('active');
+            $('.cy_color-theme-demos').toggleClass('active');
         });
     }
 
@@ -519,8 +519,8 @@
     }
 
     //thumbnail slider
-    var dl_thumbnail_testimonial_slider = document.getElementsByClassName("dl_thumbnail_testimonial_slider ");
-    if (dl_thumbnail_testimonial_slider.length) {
+    var cy_thumbnail_testimonial_slider = document.getElementsByClassName("cy_thumbnail_testimonial_slider ");
+    if (cy_thumbnail_testimonial_slider.length) {
         var galleryThumbs = new Swiper('.testimonial_gallery_top', {
             spaceBetween: 20,
             slidesPerView: 3,

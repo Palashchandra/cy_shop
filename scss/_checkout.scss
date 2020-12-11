@@ -4,6 +4,7 @@
     z-index: 1;
     background-color: $white;
     padding: 70px 48px;
+    box-shadow: -0.314px 5.992px 60px 0px rgba(53, 53, 64, 0.15);
     @media #{$tab}{
         padding: 40px 20px;
     }
@@ -14,6 +15,11 @@
         font-size: 35px;
         text-transform: uppercase;
         margin-bottom: 27px;
+    }
+    .cu_input{
+        border: 1px solid #d8d8d8;
+        font-size: 14px;
+        color: #878c9a;
     }
 }
 .checkout_box_wrapper{
@@ -156,6 +162,7 @@
 .order_details{
     padding: 43px 40px 80px;
     background-color: #fff;
+    box-shadow: -0.314px 5.992px 60px 0px rgba(53, 53, 64, 0.15);
     @media #{$tab}{
         padding: 30px 20px;
         margin-top: 50px;

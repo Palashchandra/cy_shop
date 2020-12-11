@@ -763,12 +763,12 @@
 .active_off_canvus .off_canvus_menu>.off_canvus_menu_iner {
     transform: translateX(0);
 }
-.active_off_canvus .dl_site_page {
+.active_off_canvus .cy_site_page {
     transform: translateX(-345px);
 } 
 
-.dl_collaps_menu_icon .burger_icon_top,
-.dl_collaps_menu_icon .burger_icon_bottom {
+.cy_collaps_menu_icon .burger_icon_top,
+.cy_collaps_menu_icon .burger_icon_bottom {
     display: block;
     position: absolute;
     left: 0;
@@ -782,10 +782,10 @@
     transition: transform .6s cubic-bezier(.165, .84, .44, 1), -webkit-transform .6s cubic-bezier(.165, .84, .44, 1)
 }
 
-.dl_collaps_menu_icon .burger_icon_top:before,
-.dl_collaps_menu_icon .burger_icon_top:after,
-.dl_collaps_menu_icon .burger_icon_bottom:before,
-.dl_collaps_menu_icon .burger_icon_bottom:after {
+.cy_collaps_menu_icon .burger_icon_top:before,
+.cy_collaps_menu_icon .burger_icon_top:after,
+.cy_collaps_menu_icon .burger_icon_bottom:before,
+.cy_collaps_menu_icon .burger_icon_bottom:after {
     content: "";
     position: absolute;
     top: 0;
@@ -796,8 +796,8 @@
     opacity: .99
 }
 
-.dl_collaps_menu_icon .burger_icon_top:before,
-.dl_collaps_menu_icon .burger_icon_bottom:before {
+.cy_collaps_menu_icon .burger_icon_top:before,
+.cy_collaps_menu_icon .burger_icon_bottom:before {
     -webkit-transform-origin: right;
     -ms-transform-origin: right;
     transform-origin: right;
@@ -809,8 +809,8 @@
     transition: transform .6s cubic-bezier(.165, .84, .44, 1) .2s, -webkit-transform .6s cubic-bezier(.165, .84, .44, 1) .2s
 }
 
-.dl_collaps_menu_icon .burger_icon_top:after,
-.dl_collaps_menu_icon .burger_icon_bottom:after {
+.cy_collaps_menu_icon .burger_icon_top:after,
+.cy_collaps_menu_icon .burger_icon_bottom:after {
     -webkit-transform-origin: left;
     -ms-transform-origin: left;
     transform-origin: left;
@@ -822,28 +822,28 @@
     transition: transform .6s cubic-bezier(.165, .84, .44, 1), -webkit-transform .6s cubic-bezier(.165, .84, .44, 1)
 }
 
-.dl_collaps_menu_icon .burger_icon_top {
+.cy_collaps_menu_icon .burger_icon_top {
     top: 0
 }
 
-.dl_collaps_menu_icon .burger_icon_bottom {
+.cy_collaps_menu_icon .burger_icon_bottom {
     bottom: 0
 }
 
-.dl_collaps_menu_icon .burger_icon_bottom:before {
+.cy_collaps_menu_icon .burger_icon_bottom:before {
     -webkit-transform-origin: left;
     -ms-transform-origin: left;
     transform-origin: left
 }
 
-.dl_collaps_menu_icon .burger_icon_bottom:after {
+.cy_collaps_menu_icon .burger_icon_bottom:after {
     -webkit-transform-origin: right;
     -ms-transform-origin: right;
     transform-origin: right
 }
 
-.dl_collaps_menu_icon:hover .burger_icon_top:before,
-.dl_collaps_menu_icon:hover .burger_icon_bottom:before {
+.cy_collaps_menu_icon:hover .burger_icon_top:before,
+.cy_collaps_menu_icon:hover .burger_icon_bottom:before {
     -webkit-transform: scaleX(0) translateZ(0);
     transform: scaleX(0) translateZ(0);
     transition: -webkit-transform .6s cubic-bezier(.165, .84, .44, 1);
@@ -852,8 +852,8 @@
     transition: transform .6s cubic-bezier(.165, .84, .44, 1), -webkit-transform .6s cubic-bezier(.165, .84, .44, 1)
 }
 
-.dl_collaps_menu_icon:hover .burger_icon_top:after,
-.dl_collaps_menu_icon:hover .burger_icon_bottom:after {
+.cy_collaps_menu_icon:hover .burger_icon_top:after,
+.cy_collaps_menu_icon:hover .burger_icon_bottom:after {
     -webkit-transform: scaleX(1) translateZ(0);
     transform: scaleX(1) translateZ(0);
     transition: -webkit-transform .6s cubic-bezier(.165, .84, .44, 1) .2s;
