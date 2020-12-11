@@ -476,7 +476,8 @@
             }
             @media #{$big_screen}{
                 font-size: 60px;
-                line-height: 75px;
+                line-height: 65px;
+                top: -28px;
             }
             @media #{$extra_big_screen}{
                 font-size: 80px;

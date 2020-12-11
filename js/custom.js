@@ -4,7 +4,7 @@
     //sticky menu
     $(window).on('scroll', function () {
         var window_top = $(window).scrollTop() + 0;
-        if (window_top > 150) {
+        if (window_top > 200) {
             $('.header_part , .classic_header, .fixed_menu ').addClass('menu_fixed animated slideInDown');
         } else {
             $('.header_part , .classic_header, .fixed_menu').removeClass('menu_fixed animated slideInDown');
@@ -135,19 +135,6 @@
             removalDelay: 160,
             preloader: true,
             fixedContentPos: false
-        });
-    }
-    //video popup
-    var product_btn_popup = $('.product_btn_popup');
-    if (product_btn_popup.length > 0) {
-        product_btn_popup.magnificPopup({
-            delegate: '.product_btn',
-            type: 'image',
-            gallery: {
-                enabled: true,
-                navigateByImgClick: true,
-                preload: [0,1]
-            },
         });
     }
 
@@ -643,6 +630,28 @@
         };
     }
     
+    //product count 
+    var incrementPlus;
+    var incrementMinus;
+    var buttonPlus = $(".cart-qty-plus");
+    var buttonMinus = $(".cart-qty-minus");
+
+    var incrementPlus = buttonPlus.click(function() {
+        var $n = $(this)
+            .parent(".product_count, .popup_product_count")
+            .find(".qty");
+        $n.val(Number($n.val()) + 1);
+    });
+
+    var incrementMinus = buttonMinus.click(function() {
+        var $n = $(this)
+            .parent(".product_count, .popup_product_count")
+            .find(".qty");
+        var amount = Number($n.val());
+        if (amount > 0) {
+            $n.val(amount - 1);
+        }
+    });
 
 
 }(jQuery));
