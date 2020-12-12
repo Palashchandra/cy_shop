@@ -2,12 +2,16 @@
     color: #000;
     position: fixed;
     top: 0;
-    right: -270px;
-    width: 270px;
+    right: -350px;
+    width: 350px;
     background-color: #fff;
     z-index: 999;
     height: 100%;
     visibility: visible;
+    @media #{$tab}{
+        right: -275px;
+        width: 275px;
+    }
     .cy_skin-body{
         height: 100%;
         position: relative;
@@ -16,10 +20,13 @@
             height: 100%;
             position: absolute;
             overflow-y: scroll;
-            width: 270px;
+            width: 350px;
             z-index: 1;
             padding: 36px 10px 60px;
             overflow-x: hidden;
+            @media #{$tab}{
+                width: 275px;
+            }
         }
     }
     &.active{

@@ -340,28 +340,61 @@
     };
 
 
-    // Preset
-    if ($(".cy_color-theme-demos").length > 0) {
-        //switcher 
-        var switchs = true;
-        $(".settingBtn").on("click", function (e) {
-            e.preventDefault();
-            if (switchs) {
-                $(this).addClass("active");
-                $(".cy_color-theme-demos").animate({
-                    "right": "0px"
-                }, 400);
-                switchs = false;
-            } else {
-                $(this).removeClass("active");
-                $(".cy_color-theme-demos").animate({
-                    "right": "-270px"
-                }, 400);
-                switchs = true;
+    
+
+    function myFunction(x) {
+        if (x.matches) { // If media query matches
+          // Preset
+            if ($(".cy_color-theme-demos").length > 0) {
+                //switcher 
+                var switchs = true;
+                $(".settingBtn").on("click", function (e) {
+                    e.preventDefault();
+                    if (switchs) {
+                        $(this).addClass("active");
+                        $(".cy_color-theme-demos").animate({
+                            "right": "0px"
+                        }, 400);
+                        switchs = false;
+                    } else {
+                        $(this).removeClass("active");
+                        $(".cy_color-theme-demos").animate({
+                            "right": "-270px"
+                        }, 400);
+                        switchs = true;
+                    }
+                    $('.cy_color-theme-demos').toggleClass('active');
+                });
             }
-            $('.cy_color-theme-demos').toggleClass('active');
-        });
+        } else {
+          // Preset
+            if ($(".cy_color-theme-demos").length > 0) {
+                //switcher 
+                var switchs = true;
+                $(".settingBtn").on("click", function (e) {
+                    e.preventDefault();
+                    if (switchs) {
+                        $(this).addClass("active");
+                        $(".cy_color-theme-demos").animate({
+                            "right": "0px"
+                        }, 400);
+                        switchs = false;
+                    } else {
+                        $(this).removeClass("active");
+                        $(".cy_color-theme-demos").animate({
+                            "right": "-350px"
+                        }, 400);
+                        switchs = true;
+                    }
+                    $('.cy_color-theme-demos').toggleClass('active');
+                });
+            }
+        }
     }
+      
+    var x = window.matchMedia("(max-width: 768px)")
+    myFunction(x) // Call listener function at run time
+    x.addListener(myFunction) // Attach listener function on state changes
 
     // Preloader js
     $(window).on('load', function () {

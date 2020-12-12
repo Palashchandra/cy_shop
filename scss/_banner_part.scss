@@ -491,18 +491,22 @@
     }
     .cu_btn{
         position: absolute;
-        left: 0;
-        right: 0;
-        max-width: 200px;
+        right: 7%;
         text-align: center;
         margin: 0 auto;
-        bottom: 0;
+        top: 17%;
+        z-index: 9;
         &:hover{
             background-color: $white;
             border-color: #fff;
+            color: $heading_color;
         }
         @media #{$mobile}{
             bottom: -100px;
+            top: auto;
+            right: 0;
+            left: 0;
+            max-width: 200px;
         }
     }
     .swiper-slide-active {

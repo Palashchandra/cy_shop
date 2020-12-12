@@ -8,6 +8,7 @@
         display: flex;
         align-items: center;
         justify-content: center;
+       
     }
     .product_img + .product_description{
         margin-top: 21px;
@@ -17,6 +18,9 @@
         display: flex;
         align-items: center;
         justify-content: space-between;
+        @media #{$mobile}{
+            display: block;
+        }
         .product_name{
             a{
                 color: $text_color;
@@ -42,6 +46,11 @@
         visibility: hidden;
         display: inline-block;
         @include transform_time(.3s);
+        @media #{$mobile}{
+            position: absolute;
+            top: 30px;
+            right: 30px;
+        }
         i{
             font-size: 23px;
             font-weight: 700;

@@ -855,6 +855,12 @@ button:focus,
 .opasity_05{
     opacity: .1;
 }
-
-/**************** common css end ****************/
-
+.not-allowed {
+    cursor: not-allowed;
+}
+.cy_site_page{
+    @media #{$tab}{
+        overflow: hidden;
+    }
+}
+/**************** common css end ****************/    

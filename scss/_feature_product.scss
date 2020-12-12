@@ -166,7 +166,7 @@
     align-items: center;
     justify-content: center;
     width: 100%;
-    @media #{$xs_mobile}{
+    @media #{$tab}{
         height: 400px;
     }
 }

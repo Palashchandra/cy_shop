@@ -1134,6 +1134,16 @@ button:focus,
   opacity: 0.1;
 }
 
+.not-allowed {
+  cursor: not-allowed;
+}
+
+@media (max-width: 991px) {
+  .cy_site_page {
+    overflow: hidden;
+  }
+}
+
 /**************** common css end ****************/
 /******** base color css ********/
 .cu_btn {
@@ -1736,12 +1746,18 @@ button:focus {
   color: #000;
   position: fixed;
   top: 0;
-  right: -270px;
-  width: 270px;
+  right: -350px;
+  width: 350px;
   background-color: #fff;
   z-index: 999;
   height: 100%;
   visibility: visible;
+}
+@media (max-width: 991px) {
+  .cy_color-theme-demos {
+    right: -275px;
+    width: 275px;
+  }
 }
 .cy_color-theme-demos .cy_skin-body {
   height: 100%;
@@ -1752,10 +1768,15 @@ button:focus {
   height: 100%;
   position: absolute;
   overflow-y: scroll;
-  width: 270px;
+  width: 350px;
   z-index: 1;
   padding: 36px 10px 60px;
   overflow-x: hidden;
+}
+@media (max-width: 991px) {
+  .cy_color-theme-demos .cy_skin-body .cy_skin-wrap {
+    width: 275px;
+  }
 }
 .cy_color-theme-demos.active {
   box-shadow: -3px 0px 10px 0px rgba(26, 38, 74, 0.15);
@@ -3238,20 +3259,24 @@ button:focus {
 }
 .cy_banner_part_style_2 .cu_btn {
   position: absolute;
-  left: 0;
-  right: 0;
-  max-width: 200px;
+  right: 7%;
   text-align: center;
   margin: 0 auto;
-  bottom: 0;
+  top: 17%;
+  z-index: 9;
 }
 .cy_banner_part_style_2 .cu_btn:hover {
   background-color: #fff;
   border-color: #fff;
+  color: #1f1e35;
 }
 @media (max-width: 767.98px) {
   .cy_banner_part_style_2 .cu_btn {
     bottom: -100px;
+    top: auto;
+    right: 0;
+    left: 0;
+    max-width: 200px;
   }
 }
 .cy_banner_part_style_2 .swiper-slide-active .banner_title span {
@@ -3541,6 +3566,11 @@ button:focus {
   align-items: center;
   justify-content: space-between;
 }
+@media (max-width: 767.98px) {
+  .cu_product_list_inner .product_description {
+    display: block;
+  }
+}
 .cu_product_list_inner .product_description .product_name a {
   color: #878c9a;
 }
@@ -3564,6 +3594,13 @@ button:focus {
   display: inline-block;
   -webkit-transition: 0.3s;
   transition: 0.3s;
+}
+@media (max-width: 767.98px) {
+  .cu_product_list_inner .product_btn {
+    position: absolute;
+    top: 30px;
+    right: 30px;
+  }
 }
 .cu_product_list_inner .product_btn i {
   font-size: 23px;
@@ -3991,7 +4028,7 @@ button:focus {
   justify-content: center;
   width: 100%;
 }
-@media (max-width: 576px) {
+@media (max-width: 991px) {
   .feature_product_video_thumb {
     height: 400px;
   }
@@ -5557,7 +5594,7 @@ button:focus {
   transform: translateX(-50%);
 }
 .cy_line .cy_single_line:nth-child(2) .animate_shape_05 {
-  bottom: 16%;
+  bottom: 23%;
   left: 50%;
   transform: translateX(-50%);
 }
@@ -5572,7 +5609,7 @@ button:focus {
   transform: translateX(-50%);
 }
 .cy_line .cy_single_line:nth-child(3) .animate_shape_02 {
-  bottom: 9%;
+  bottom: 14%;
   left: 50%;
   transform: translateX(-50%);
 }
@@ -5602,7 +5639,7 @@ button:focus {
   transform: translateX(-50%);
 }
 .cy_line .cy_single_line:nth-child(4) .animate_shape_04 {
-  bottom: 11%;
+  bottom: 18%;
   left: 50%;
   transform: translateX(-50%);
 }
@@ -9661,14 +9698,10 @@ button:focus {
   margin-bottom: 38px;
   color: #fff;
 }
-@media (max-width: 767.98px) {
+@media (max-width: 991px) {
   .cy_single_footer_widget .widget_title {
     margin-bottom: 20px;
-  }
-}
-@media only screen and (min-width: 768px) and (max-width: 991.98px) {
-  .cy_single_footer_widget .widget_title {
-    margin-bottom: 20px;
+    color: #1f1e35;
   }
 }
 .cy_single_footer_widget .menu_list {
@@ -9780,7 +9813,7 @@ button:focus {
   margin: 0;
   z-index: 7;
 }
-@media (max-width: 767.98px) {
+@media (max-width: 576px) {
   .subscribe_form button {
     position: relative;
     top: auto;
@@ -9811,6 +9844,10 @@ button:focus {
   .offwhite_bg_mobile {
     background-color: #fffcf3;
   }
+}
+.footer_section.dark_img_bg .cy_single_footer_widget .widget_title {
+  margin-bottom: 20px;
+  color: #fff;
 }
 
 /*# sourceMappingURL=style.css.map */
