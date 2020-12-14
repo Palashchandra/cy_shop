@@ -5577,6 +5577,7 @@ button:focus {
   top: 82px;
   left: 50%;
   transform: translateX(-50%);
+  display: none;
 }
 .cy_line .cy_single_line:nth-child(2) .animate_shape_02 {
   top: 27%;
