@@ -1885,6 +1885,9 @@ button:focus {
   overflow: hidden;
   cursor: pointer;
 }
+.page-scroll-up.cy_yellow_bg {
+  background-color: #ffde28;
+}
 .page-scroll-up i {
   position: absolute;
   top: 50%;
@@ -2286,6 +2289,31 @@ button:focus {
 }
 .header_part.dark .navbar-toggler .icon-bar {
   background-color: #111;
+}
+.header_part.cy_menu_color_02 .navbar .nav-link {
+  color: #1f1e35;
+}
+.header_part.cy_menu_color_02 .navbar .nav-link:hover {
+  color: #ffde28;
+}
+.header_part.cy_menu_color_02 .nav-item:hover .nav-link {
+  color: #ffde28;
+}
+.header_part.cy_menu_color_02 .navbar .dropdown-menu .dropdown-item.current {
+  color: #ffde28;
+}
+.header_part.cy_menu_color_02 .navbar .dropdown-menu .dropdown-item:focus, .header_part.cy_menu_color_02 .navbar .dropdown-menu .dropdown-item:hover {
+  background-color: #ffde28;
+}
+.header_part.cy_menu_color_02 .header_right_option .cart_option .cart_content {
+  background-color: #ffde28;
+}
+.header_part.cy_menu_color_02 .header_right_option .cart_option .cart_icon.white_img {
+  -webkit-filter: brightness(1) invert(0);
+  filter: brightness(1) invert(0);
+}
+.header_part.cy_menu_color_02 .header_right_option .cart_option .cart_count {
+  color: #1f1e35;
 }
 .header_part .header_right_option .burger_icon {
   color: #111;
@@ -3713,6 +3741,10 @@ button:focus {
 }
 .cu_product_list_inner.style_03 .price {
   font-size: 35px;
+}
+.cu_product_list_inner.style_04 .product_btn {
+  background-color: #f2f2f2;
+  color: #4d4c57;
 }
 
 .cy_product.sec_padding {

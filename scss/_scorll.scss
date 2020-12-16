@@ -54,6 +54,9 @@
 	background-color: $base_color;
 	overflow: hidden;
 	cursor: pointer;
+	&.cy_yellow_bg{
+		background-color: #ffde28;
+	}
 	i {
 		position: absolute;
 		top: 50%;

@@ -427,6 +427,47 @@
             background-color: #111;
         }
     }
+    &.cy_menu_color_02{
+        .navbar .nav-link {
+            color: $heading_color;
+            &:hover{
+                color: #ffde28;
+            }
+        }
+        .nav-item{
+            &:hover{
+                .nav-link {
+                    color: #ffde28;
+                }
+            }
+        }
+        .navbar {
+            .dropdown-menu {
+                .dropdown-item {
+                    &.current {
+                        color: #ffde28;
+                    }
+                    &:focus,
+                    &:hover {
+                        background-color: #ffde28;
+                    }
+                }
+            }
+        }
+        .header_right_option .cart_option {
+            .cart_content {
+                background-color: #ffde28;
+            }
+            .cart_icon.white_img {
+                -webkit-filter: brightness(1) invert(0);
+                filter: brightness(1) invert(0);
+            }
+            .cart_count{
+                color: $heading_color;
+            }
+        }
+       
+    }
     .header_right_option .burger_icon {
         color: #111;
     }
@@ -521,6 +562,7 @@
             color: $heading_color;
         }
     }
+    
 }
 
 .dropdown-item.active,
