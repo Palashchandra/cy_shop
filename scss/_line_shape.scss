@@ -97,6 +97,11 @@
                 left: 50%;
                 transform: translateX(-50%);
             }
+            .animate_shape_03{
+                top: 3%;
+                left: 50%;
+                transform: translateX(-50%);
+            }
             @media #{$tab}{
                 display: none;
             }

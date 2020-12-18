@@ -25,7 +25,7 @@
             a{
                 color: $text_color;
                 &:hover{
-                    color: $base_color;
+                    color: $heading_color;
                 }
             }
         }
@@ -168,7 +168,7 @@
             font-size: 20px;
             &:hover{
                 a{
-                    color: $base_color;
+                    color: $heading_color;
                 }
             }
         }

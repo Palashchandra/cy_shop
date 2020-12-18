@@ -1110,6 +1110,21 @@ button:focus,
   background-color: #fffcf3;
 }
 
+.half_off_white_bg {
+  position: relative;
+  z-index: 1;
+}
+.half_off_white_bg:after {
+  position: absolute;
+  content: "";
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 50%;
+  background-color: #fffcf3;
+  z-index: -1;
+}
+
 .deep_off_white_bg {
   background-color: #ffffc8;
 }
@@ -2131,7 +2146,7 @@ button:focus {
 }
 .header_part.classic_header .navbar .nav-link {
   display: inline-block;
-  margin: 48px 30px;
+  margin: 57px 30px;
   text-transform: uppercase;
   font-size: 16px;
   color: #fff;
@@ -3023,6 +3038,15 @@ button:focus {
   text-transform: uppercase;
   color: #878c9a;
 }
+.cy_banner_part .swiper-pagination-bullet:nth-child(1):after {
+  background-color: #ffffff;
+}
+.cy_banner_part .swiper-pagination-bullet:nth-child(2):after {
+  background-color: #363637;
+}
+.cy_banner_part .swiper-pagination-bullet:nth-child(3):after {
+  background-color: #f40000;
+}
 
 .cy_social_link {
   position: absolute;
@@ -3088,6 +3112,9 @@ button:focus {
 }
 .cy_social_link a:hover {
   color: #3c3c3c;
+}
+.cy_social_link.social_style_02 a:hover {
+  color: #ffde28;
 }
 
 .cy_banner_part_style_2 {
@@ -3603,7 +3630,7 @@ button:focus {
   color: #878c9a;
 }
 .cu_product_list_inner .product_description .product_name a:hover {
-  color: #ed1c16;
+  color: #1f1e35;
 }
 .cu_product_list_inner .product_description .product_name + .price {
   margin-top: 13px;
@@ -3742,7 +3769,7 @@ button:focus {
   font-size: 20px;
 }
 .cu_product_list_inner.style_03 .product_name:hover a {
-  color: #ed1c16;
+  color: #1f1e35;
 }
 .cu_product_list_inner.style_03 .price {
   font-size: 35px;
@@ -5687,6 +5714,11 @@ button:focus {
   left: 50%;
   transform: translateX(-50%);
 }
+.cy_line .cy_single_line:nth-child(3) .animate_shape_03 {
+  top: 3%;
+  left: 50%;
+  transform: translateX(-50%);
+}
 @media (max-width: 991px) {
   .cy_line .cy_single_line:nth-child(3) {
     display: none;
@@ -7167,7 +7199,7 @@ button:focus {
 }
 
 .gm-style-iw.gm-style-iw-c {
-  min-width: 300px !important;
+  min-width: 200px !important;
   overflow: hidden;
   padding: 20px;
 }
@@ -7185,6 +7217,23 @@ button:focus {
   font-size: 14px;
   color: #7C8887;
   line-height: 1.3;
+}
+
+.gm-style .gm-style-iw-t::after {
+  background: #fff;
+  box-shadow: none;
+  content: "";
+  height: 15px;
+  left: 0 !important;
+  position: absolute;
+  top: 0;
+  transform: translate(0%, 0%) rotate(0);
+  width: 15px;
+  clip-path: polygon(100% 0, 0 0, 0 100%);
+}
+
+.gm-style .gm-style-iw-c {
+  transform: translate(0%, -100%);
 }
 
 .gm-style .gm-style-iw-c {

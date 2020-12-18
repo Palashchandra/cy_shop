@@ -28,7 +28,7 @@
             const marker = new google.maps.Marker({
                 position: markersOnMap[i].LatLng[0],
                 map: map,
-                "icon": 'http://droitthemes.com/palash/Location_icon.png',
+                "icon": 'img/marker.png',
             });
 
             const infowindow = new google.maps.InfoWindow({
