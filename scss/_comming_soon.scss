@@ -13,11 +13,6 @@
             -moz-column-count: 1;
             column-count: 1;
         }
-        @media #{$large_mobile}{
-            -webkit-column-count: 2;
-            -moz-column-count: 2;
-            column-count: 2;
-        }
         @media #{$tab_device}{
             -webkit-column-count: 2;
             -moz-column-count: 2;
@@ -99,12 +94,18 @@
             @media #{$tab}{
                 width: 100%;
             }
+            @media #{$medium_device}{
+                width: 60%;
+            }
         }
         .comming_soon_page_thumb_02{
             position: absolute;
             left: 0;
             top: 0;
             @media #{$tab}{
+                display: none;
+            }
+            @media #{$medium_device}{
                 display: none;
             }
         }
@@ -114,6 +115,9 @@
             left: 20%;
             @media #{$tab}{
                 display: none;
+            }
+            @media #{$medium_device}{
+                left: -10%;
             }
         }
         .sub_title{
@@ -144,6 +148,9 @@
             text-align: left;
             @media #{$tab}{
                 padding: 90px 20px;
+            }
+            @media #{$medium_device}{
+                padding: 168px 20px;
             }
         }
         .cy_countdown_inner span {
@@ -177,6 +184,7 @@
             top: 0;
             @media #{$tab}{
                 width: 100%;
+                position: relative;
             }
         }
         .sub_title{
@@ -216,6 +224,7 @@
             }
             @media #{$medium_device}{
                 padding: 75px 30px;
+                width: 65% !important;
             }
             @media #{$big_screen}{
                 padding: 85px 50px;

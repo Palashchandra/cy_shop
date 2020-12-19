@@ -583,7 +583,7 @@
         }
     });
 
-    var galleryWrapper = $('.cy_grid_wrapper');
+    var galleryWrapper = $('.cy_grid_wrapper_popup');
     if(galleryWrapper.length){
         galleryWrapper.magnificPopup({
             delegate: 'a',
